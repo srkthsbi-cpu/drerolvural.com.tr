@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drerolvural.com.tr/sitemap.xml

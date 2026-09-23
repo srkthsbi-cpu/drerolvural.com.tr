@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Tüp mide ameliyatı simgesi</title>
+  <desc id="desc">Sadeleştirilmiş mide anatomisi ve tüp mide stapler hattı</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stomach silhouette: deliberately broad and anatomical, not pear-shaped -->
+    <path d="M63 18c-3 7-3 13-1 18 2 5 7 8 12 11 10 6 18 15 20 27 3 17-6 31-20 39-10 6-24 8-36 4-10-3-17-10-18-19-2-11 3-20 11-26 7-5 10-12 9-20-1-8 3-15 11-18 4-2 8-1 12 4z"
+          stroke="#129DB7" stroke-width="7"/>
+    <!-- Esophagus -->
+    <path d="M62 18V9" stroke="#129DB7" stroke-width="7"/>
+    <!-- Pylorus / outlet -->
+    <path d="M86 94c7 1 12 0 17-3" stroke="#129DB7" stroke-width="7"/>
+    <!-- Sleeve staple / resection line -->
+    <path d="M78 34c8 8 12 18 13 29 1 11-3 22-10 30" stroke="#82BC00" stroke-width="6"/>
+    <path d="M81 43l4 2M84 53l4 2M85 63l4 1M84 73l4 1M81 83l4 2" stroke="#FFFFFF" stroke-width="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+v10 SEO QUALITY AUDIT
+
+Scope: v9 -> v10 technical/content-cannibalization pass.
+
+Changes:
+- Preferred homepage URL normalized to https://drerolvural.com.tr/ (no /index.html duplicate in sitemap).
+- Fixed malformed H1 and breadcrumb labels on Mide Balonu, Mide Botoksu, Obezite Tedavisi, Revizyon Cerrahisi.
+- Corrected metabolic surgery supporting-article canonical/OG identities that previously pointed to the same URL.
+- Clarified the title/H1/description of the legacy metabolic-diabetes article to distinguish its search intent.
+- Sitemap regenerated from actual HTML files.
+
+Policy: No new low-value pages were generated in this pass. Existing content was preserved; only clear technical identity and search-intent ambiguities were corrected.

@@ -1,0 +1,1 @@
+v11 kalite kontrolü: teknik SEO, canonical, sitemap, relative asset, favicon, erişilebilir mobil navigasyon ve temel HTML bütünlüğü için otomatik kontrol uygulanmıştır.

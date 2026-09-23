@@ -1,0 +1,8 @@
+Erol Vural SEO Bilgi Merkezi v12
+
+Cloudflare Direct Upload ekranında:
+- Assets directory: /
+- HTML handling: NONE
+- Not found handling: NONE
+Bu sürüm .html URL'lerini canonical olarak korur.
+Deploy sonrasında sitemap.xml ve robots.txt canlı olarak kontrol edilmelidir.
