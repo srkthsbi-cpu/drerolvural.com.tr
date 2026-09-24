@@ -36,12 +36,10 @@ jobs:
                   P().feed(p.read_text(encoding='utf-8'))
               except Exception:
                   pass
-          # Keep only canonical URLs found in actual HTML and add core pages that may use non-canonical templates.
           core=['index.html','doktor-erol-vural.html','gastrik-bypass.html','metabolik-cerrahi.html','mide-balonu.html','mide-botoksu.html','obezite-cerrahisi.html','obezite-tedavisi.html','revizyon-cerrahisi.html','tup-mide-ameliyati.html','uzmanindan-bilgiler.html','bilgi-merkezi-yaklasimi.html']
           for f in core:
               p=Path(f)
               if p.exists(): urls.setdefault(BASE+f,today)
-          # Normalize trailing root URL.
           if BASE+'index.html' in urls:
               urls[BASE]=1
               del urls[BASE+'index.html']
@@ -59,3 +57,4 @@ jobs:
           git rm .github/workflows/update-sitemap-once.yml
           git commit -m 'Update sitemap for new SEO publications' || exit 0
           git push
+# One-time publication sitemap refresh.
