@@ -1,16 +1,17 @@
 FULL SITE QA REPORT
 ===================
-HTML pages scanned: 1024
+HTML pages scanned: 1025
 HTML pages modified: 0
 Pages with accidental standalone <p>e</p> removed: 0
 Pages receiving/repairing mobile menu: 0
 Missing mobile toggles inserted: 0
-Broken local HTML/document links remaining: 0
+Broken local HTML/document links remaining: 1
 Broken local image links remaining: 0
 Duplicate HTML ids: 0
 Missing core meta checks: 0
 
 BROKEN LINKS:
+blog/bariatrik-cerrahi-sonrasi-nsaid-agri-kesici-kullanimi.html -> bariatrik-cerrahi-sonrasi-acil-degerlendirme-gerektirebilecek-belirtiler.html
 
 BROKEN IMAGES:
 
