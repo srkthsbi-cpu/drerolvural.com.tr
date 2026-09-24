@@ -1,6 +1,8 @@
 name: Add contact info site-wide
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
