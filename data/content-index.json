@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T01:27:28.432778+00:00",
+  "generated_at": "2026-09-24T01:34:43.920297+00:00",
   "page_count": 1022,
   "entries": [
     {
@@ -8,13 +8,13 @@
       "h1": "Bilgi Merkezi Yaklaşımı",
       "meta_description": "Doç. Dr. Erol Vural Bilgi Merkezi'nin içerik kapsamı, yazarlık, kaynak kullanımı ve tıbbi bilgilendirme yaklaşımı.",
       "canonical": "https://drerolvural.com.tr/bilgi-merkezi-yaklasimi.html",
-      "word_count": 617,
+      "word_count": 723,
       "headings": [],
       "has_faq": false,
       "external_sources": [
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "47355727b8d17ee896a10014dcb970bf5d818eff1ff6f69651858212ebca55a5"
+      "content_hash": "aeb9ae2e968c9be9159c988e85766f4e4d3e4fccf584df0fb3fe172ac3da6e19"
     },
     {
       "url": "/blog/ameliyat-gunu-oncesi-yapilmasi-gerekenler.html",
@@ -6944,7 +6944,7 @@
       "h1": "Gastrik Bypass mı Tüp Mide mi? İki Ameliyat Arasındaki Farklar",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/gastrik-bypass-mi-tup-mide-mi.html",
-      "word_count": 947,
+      "word_count": 1085,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -6953,7 +6953,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
-      "content_hash": "7e69ff18cb76a8a318ef65c1a324452e36c266b54d64a6be5e53115b1b54ab5b"
+      "content_hash": "de4294c84a64555398efb6dbaf44d0a7144e309c6798ef1b3a7c76d4dd767b0a"
     },
     {
       "url": "/blog/gastrik-bypass-nasil-yapilir.html",
@@ -6961,7 +6961,7 @@
       "h1": "Gastrik Bypass Nasıl Yapılır? Ameliyatın Aşamaları",
       "meta_description": "Gastrik bypass ameliyatının temel aşamalarını, Roux-en-Y tekniğini, ameliyat öncesi değerlendirmeyi ve hastanede iyileşme sürecini anlatan rehber.",
       "canonical": "https://drerolvural.com.tr/blog/gastrik-bypass-nasil-yapilir.html",
-      "word_count": 825,
+      "word_count": 963,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -6970,7 +6970,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "a99a9892f2d855f8fee23e697375806155216245ec03932e37f729df1e4798dc"
+      "content_hash": "d0b2a4c13fbaddc1bb67668ed250d3898b3c5361610be0e4280a5f9b0b2c25f8"
     },
     {
       "url": "/blog/gastrik-bypass-nedir.html",
@@ -6978,7 +6978,7 @@
       "h1": "Gastrik Bypass Nedir? Roux-en-Y ve Mini Bypass Hakkında Bilmeniz Gerekenler",
       "meta_description": "Gastrik bypassın temel mekanizması, Roux-en-Y ve mini bypass kavramları, adaylık ve ameliyat sonrası takip hakkında hasta rehberi.",
       "canonical": "https://drerolvural.com.tr/blog/gastrik-bypass-nedir.html",
-      "word_count": 900,
+      "word_count": 1038,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -6987,7 +6987,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
-      "content_hash": "adcdcd95a80616f7840f4f4d0eb4955a8615acbbaecd14c13160e55b6a1e099a"
+      "content_hash": "cf549422e35f5dce3ba1c4881e4c37486b755aba6b297c2882aaa7244c02275f"
     },
     {
       "url": "/blog/gastrik-bypass-oncesi-degerlendirme.html",
@@ -7031,7 +7031,7 @@
       "h1": "Gastrik Bypass Riskleri ve Komplikasyonları",
       "meta_description": "Gastrik bypass ameliyatının erken ve geç dönem risklerini, beslenme ile ilişkili sorunları ve uzun dönem takip gerekliliğini anlatan kapsamlı rehber.",
       "canonical": "https://drerolvural.com.tr/blog/gastrik-bypass-riskleri.html",
-      "word_count": 792,
+      "word_count": 930,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -7040,7 +7040,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "d07d2a4667c58e47578ad340ee27cccf9de32bb2ecf199ec102cc51233428078"
+      "content_hash": "667cabda79b122d35e8699f1b06568061a8a523040d8ac51563885c89090547e"
     },
     {
       "url": "/blog/gastrik-bypass-sonrasi-b12.html",
@@ -7066,7 +7066,7 @@
       "h1": "Gastrik Bypass Sonrası Beslenme ve Vitamin Takibi",
       "meta_description": "Gastrik bypass sonrası beslenme aşamalarını, porsiyon düzenini ve vitamin-mineral takibinin neden önemli olduğunu anlatan hasta rehberi.",
       "canonical": "https://drerolvural.com.tr/blog/gastrik-bypass-sonrasi-beslenme.html",
-      "word_count": 815,
+      "word_count": 953,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -7075,7 +7075,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "afb3bbed2ebf11ced4b0ff6267514433a167df60bca212d26a5466c21ee50a58"
+      "content_hash": "4c96ef0abfe95d8c3830070610202ca816c79836f13d5fea8c736e20e476ef83"
     },
     {
       "url": "/blog/gastrik-bypass-sonrasi-bulanti-ve-kusma.html",
@@ -7695,7 +7695,7 @@
       "h1": "Gastrik Bypass Sonrası Yaşam: Kilo Takibi, Beslenme ve Kontroller",
       "meta_description": "Gastrik bypass sonrasında günlük yaşam, beslenme, fiziksel aktivite, vitamin-mineral izlemi ve uzun dönem kontroller hakkında hasta rehberi.",
       "canonical": "https://drerolvural.com.tr/blog/gastrik-bypass-sonrasi-yasam.html",
-      "word_count": 800,
+      "word_count": 938,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -7704,7 +7704,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "86e261a6a6adc906868358d70982335d0e8eadee7711592076560c2ca0610737"
+      "content_hash": "b79268cd36a68a34a0b676e07259febb16f66cd928bb8093c7df99833daec6cd"
     },
     {
       "url": "/blog/gastrik-bypass-ulseri.html",
@@ -9982,7 +9982,7 @@
       "h1": "Metabolik Cerrahi Adaylığı Nasıl Değerlendirilir?",
       "meta_description": "Metabolik cerrahinin tip 2 diyabet ve obezite ile ilişkisi, cerrahi değerlendirme ve uzun dönem takip hakkında genel bilgiler.",
       "canonical": "https://drerolvural.com.tr/blog/metabolik-cerrahi-tip2-diyabet.html",
-      "word_count": 824,
+      "word_count": 962,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -9991,7 +9991,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "33267f37d662e4c8c875a17964fd85d3d90b55570f50d6d8b99c8103a2c985d5"
+      "content_hash": "236b245655372180331821b30ee9b96625a035463202dff6b40df88ef7a605e3"
     },
     {
       "url": "/blog/metabolik-cerrahi-hakkinda-sik-sorulan-sorular.html",
@@ -10107,7 +10107,7 @@
       "h1": "Metabolik Cerrahi Kimlere Uygulanır?",
       "meta_description": "Metabolik cerrahi adaylığında vücut kitle indeksi, tip 2 diyabet, eşlik eden hastalıklar ve cerrahi risk değerlendirmesinin rolü.",
       "canonical": "https://drerolvural.com.tr/blog/metabolik-cerrahi-kimlere-uygulanir.html",
-      "word_count": 891,
+      "word_count": 1029,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -10116,7 +10116,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "cf6d4412d132c4ba6a57e74fc61104013f912437f662699c80ebb1ef306fe061"
+      "content_hash": "dae4899abdfecbbd2ee9652911e44b4291b240027bfbb70091748a6443b00521"
     },
     {
       "url": "/blog/metabolik-cerrahi-komplikasyonlari.html",
@@ -10142,7 +10142,7 @@
       "h1": "Metabolik Cerrahi Nedir? Tip 2 Diyabet ve Obezite",
       "meta_description": "Metabolik cerrahinin tip 2 diyabet ve obezite ile ilişkisi, cerrahi değerlendirme ve uzun dönem takip hakkında genel bilgiler.",
       "canonical": "https://drerolvural.com.tr/blog/metabolik-cerrahi-nedir.html",
-      "word_count": 854,
+      "word_count": 992,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -10151,7 +10151,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "db28c0fae36cc98ba2bd3a81efe0036c7022308061f57ac38228c47690482863"
+      "content_hash": "6aceffbc4ef4ed3d69c5589173f55064b459e3ddcce425967da5eb7b31e5e76f"
     },
     {
       "url": "/blog/metabolik-cerrahi-oncesi-degerlendirme.html",
@@ -10471,7 +10471,7 @@
       "h1": "Metabolik Cerrahi Sonrası Takip ve Beslenme",
       "meta_description": "Metabolik cerrahinin tip 2 diyabet ve obezite ile ilişkisi, cerrahi değerlendirme ve uzun dönem takip hakkında genel bilgiler.",
       "canonical": "https://drerolvural.com.tr/blog/metabolik-cerrahi-sonrasi-takip.html",
-      "word_count": 829,
+      "word_count": 967,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -10480,7 +10480,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "2b8af747cf9ce9b138df95762cf2ebc54fa781be55f303f3bd5e37fe25d1b3a9"
+      "content_hash": "0b2a6fd39a0e823822375286b0b5482f096dca159009342667e0bc611c34d238"
     },
     {
       "url": "/blog/metabolik-cerrahi-sonrasi-uzun-donem-diyabet-takibi.html",
@@ -10542,7 +10542,7 @@
       "h1": "Tip 2 Diyabet ve Metabolik Cerrahi",
       "meta_description": "Metabolik cerrahinin tip 2 diyabet ve obezite ile ilişkisi, cerrahi değerlendirme ve uzun dönem takip hakkında genel bilgiler.",
       "canonical": "https://drerolvural.com.tr/blog/metabolik-cerrahi-tip-2-diyabet.html",
-      "word_count": 812,
+      "word_count": 950,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -10551,7 +10551,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "2f8fafe5b5c43a0c6e29ca48d4a66d2a2964909dfdf4233ac0c8f280c8e1fba7"
+      "content_hash": "14d7fcbe9887bd7a9fd33cc9068cda930229e19cfd7cba8245d5bc7297bc923b"
     },
     {
       "url": "/blog/metabolik-cerrahi-tip2-diyabet.html",
@@ -10559,7 +10559,7 @@
       "h1": "Metabolik Cerrahi ve Tip 2 Diyabet: Cerrahi Hangi Durumlarda Değerlendirilir?",
       "meta_description": "Tip 2 diyabet ile obezite arasındaki ilişkide metabolik cerrahinin yeri, adaylık değerlendirmesi ve tedavi seçeneklerinin nasıl ele alındığı hakkında bilgilendirme.",
       "canonical": "https://drerolvural.com.tr/blog/metabolik-cerrahi-tip2-diyabet.html",
-      "word_count": 883,
+      "word_count": 1021,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -10568,7 +10568,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "d07b69c61b26ca7b9606b253c4bd11a1ac4c136cc2c711e202fe27eb566956ba"
+      "content_hash": "0960a39bf5ea0c2134bcc4b9bf0e740b9dd244242628666f63a3bd4f56dc0fd8"
     },
     {
       "url": "/blog/metabolik-cerrahi-ve-erkek-sagligi.html",
@@ -10854,14 +10854,14 @@
       "h1": "Mide Balonu Kimler İçin Uygundur?",
       "meta_description": "Mide balonunun hangi hastalarda değerlendirilebileceği, beklentiler ve cerrahi seçeneklerle farkları hakkında bilgiler.",
       "canonical": "https://drerolvural.com.tr/blog/mide-balonu-kimler-icin-uygun.html",
-      "word_count": 707,
+      "word_count": 814,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "105dabf437b431846ecca7e0049fdf13121e6bae6c21fbe31c530709173b93b4"
+      "content_hash": "7c518b00c62ae4e0e98cc770fa1e61eb77e2c33bf2a4ab3e30b527dcbd11221e"
     },
     {
       "url": "/blog/mide-balonu-mu-tup-mide-mi-hangisi-size-daha-uygun.html",
@@ -10869,7 +10869,7 @@
       "h1": "Mide Balonu mu, Tüp Mide mi? Hangisi Size Daha Uygun?",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/mide-balonu-mu-tup-mide-mi-hangisi-size-daha-uygun.html",
-      "word_count": 935,
+      "word_count": 1073,
       "headings": [],
       "has_faq": false,
       "external_sources": [
@@ -10878,7 +10878,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "7791146a85e9f891056df8de80e138f7f30ce7d39feb743753dabdfdcd1789ba"
+      "content_hash": "3e00d740e6bf77d2a8c010e56e3d5c43ff6133573bedc4a20bd4a20a96b198eb"
     },
     {
       "url": "/blog/mide-balonu-nedir.html",
@@ -10886,7 +10886,7 @@
       "h1": "Mide Balonu Nedir? Mide Balonu Kimlere Uygulanır ve Ne Kadar Kilo Verilir?",
       "meta_description": "Mide balonunun ne olduğu, endoskopik uygulama süreci, kimler için değerlendirilebileceği ve kilo yönetimindeki yeri.",
       "canonical": "https://drerolvural.com.tr/blog/mide-balonu-nedir.html",
-      "word_count": 900,
+      "word_count": 1038,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -10895,7 +10895,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "5d12e55a581d75d211567c4da00e1229c1dc56cf3e155411d0d918cb92e9dfa2"
+      "content_hash": "6aeb6ee8415ddc00f56c0b863df45d58eeecc72412d5cf9864e7491504b38e72"
     },
     {
       "url": "/blog/mide-balonu-riskleri-ve-takibi.html",
@@ -11213,14 +11213,14 @@
       "h1": "Mide Botoksu Kimler İçin Uygundur?",
       "meta_description": "Mide botoksunun kimler için değerlendirilebileceği, hangi durumlarda uygun olmayabileceği ve cerrahi seçeneklerden farkları.",
       "canonical": "https://drerolvural.com.tr/blog/mide-botoksu-kimler-icin-uygun.html",
-      "word_count": 690,
+      "word_count": 797,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "a2182e2eb9117270a7a9c65f8f4cd559483038619bdedee3256f3c6aa65b962a"
+      "content_hash": "d13d90393c1f992dedb14674880d9bc785689653542071402972f7fb3b80ac04"
     },
     {
       "url": "/blog/mide-botoksu-komplikasyonlari.html",
@@ -11268,7 +11268,7 @@
       "h1": "Mide Botoksu Nedir? Gastrik Botoks Nasıl Yapılır, Kimlere Uygulanır?",
       "meta_description": "Mide botoksunun ne olduğu, nasıl uygulandığı, kimler için değerlendirilebileceği ve diğer kilo yönetimi seçeneklerinden farkları.",
       "canonical": "https://drerolvural.com.tr/blog/mide-botoksu-nedir.html",
-      "word_count": 854,
+      "word_count": 992,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -11277,7 +11277,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "03794df62d878a75a994af59c17ef98e0b795a869c063305ff1c05061beb054f"
+      "content_hash": "efd7d5fb15ef7f0824c2827e4eb2b442c8568c0b4cb63dbed378f825a4e18593"
     },
     {
       "url": "/blog/mide-botoksu-oncesi-degerlendirme.html",
@@ -11785,14 +11785,14 @@
       "h1": "Mide Küçültme Ameliyatı Nasıl Yapılır?",
       "meta_description": "Halk arasında mide küçültme olarak anılan tüp mide ameliyatının temel aşamaları, hazırlık ve ameliyat sonrası süreç hakkında bilgiler.",
       "canonical": "https://drerolvural.com.tr/blog/mide-kucultme-ameliyati-nasil-yapilir.html",
-      "word_count": 704,
+      "word_count": 811,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "d486e6f6f72e4e8da8c1da222e8bddb13f5f615b0fe5e759b933499c3cb0519a"
+      "content_hash": "c548a6cef4e0450f8e45ee7821741d4ac655d2faa9a35294d15e46478924d734"
     },
     {
       "url": "/blog/multidisipliner-degerlendirme-neden-onemlidir.html",
@@ -11820,7 +11820,7 @@
       "h1": "Obezite Cerrahisinde BMI (VKİ) Nasıl Değerlendirilir?",
       "meta_description": "Obezite cerrahisinde BMI/VKİ ne anlama gelir? BMI sınıfları, metabolik riskler ve cerrahi değerlendirmede BMI dışında dikkate alınan faktörler.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-cerrahisi-bmi-vki-nasil-degerlendirilir.html",
-      "word_count": 884,
+      "word_count": 991,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -11829,7 +11829,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "df6efb604e7e456a3d17d11fcf53e3686e0aa46b5fbd6c7ea2ff6fb711e04a53"
+      "content_hash": "cbfc7b4df2666fe9e45e71e2ddba591724c02ae1a5dc79548ed5680c756a3b2c"
     },
     {
       "url": "/blog/obezite-cerrahisi-erken-donem-komplikasyonlari.html",
@@ -11891,7 +11891,7 @@
       "h1": "Obezite Cerrahisi Kimlere Uygulanır?",
       "meta_description": "Obezite cerrahisi kimlere uygulanır? BMI, eşlik eden hastalıklar, önceki tedaviler ve multidisipliner değerlendirme hakkında hasta rehberi.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-cerrahisi-kimlere-uygulanir.html",
-      "word_count": 876,
+      "word_count": 983,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -11900,7 +11900,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "33809f48084042c8db4d075a3591db7bce49eae7cc1abfd7de7b709534d44dd2"
+      "content_hash": "4aeee98ec4ca2a9b2c7d1f9a6d7575da7b8e8c37bfee92cc14b101b9b6f126a2"
     },
     {
       "url": "/blog/obezite-cerrahisi-komplikasyonlari.html",
@@ -12094,7 +12094,7 @@
       "h1": "Obezite Cerrahisi Rehberi: Tüp Mide, Gastrik Bypass ve Ameliyatsız Seçenekler",
       "meta_description": "Obezite cerrahisinin temel yöntemleri, cerrahi dışı seçenekler, adaylık değerlendirmesi ve ameliyat sonrası takip hakkında kapsamlı rehber.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-cerrahisi-rehberi.html",
-      "word_count": 956,
+      "word_count": 1094,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -12103,7 +12103,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery"
       ],
-      "content_hash": "5b09f8de1e1fb7f2dbcb9dae7d2c78f9cc65c5141b89ba8f064f56f7185f756f"
+      "content_hash": "7229901d2bae0042d19c695f9eb1a7e63420a558ad1428a18dd5278aa78e9030"
     },
     {
       "url": "/blog/obezite-cerrahisi-sonrasi-beslenme-hatalari.html",
@@ -12273,7 +12273,7 @@
       "h1": "Obezite Cerrahisi Sonrası Spor ve Hareket",
       "meta_description": "Obezite cerrahisi sonrasında hareketin kademeli olarak artırılması, güvenli egzersiz yaklaşımı ve uzun dönem kilo yönetiminde fiziksel aktivitenin yeri.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-cerrahisi-sonrasi-spor-ve-hareket.html",
-      "word_count": 857,
+      "word_count": 995,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -12282,7 +12282,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "e0d79da25f78ce453c339aeda32d07f643af1ee583721232addf9a36a4d0542a"
+      "content_hash": "cc61c5dc021b63cfa8bd996ca1662041d373019b4a70dbc6a869458198c267c8"
     },
     {
       "url": "/blog/obezite-cerrahisi-sonrasi-surdurulebilir-kilo-yonetimi.html",
@@ -12308,14 +12308,14 @@
       "h1": "Obezite Cerrahisi Sonrası Uzun Dönem Takip",
       "meta_description": "Obezite cerrahisi sonrasında beslenme, vitamin-mineral durumu, kilo seyri, metabolik sağlık ve düzenli kontrollerin önemi.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-cerrahisi-sonrasi-takip.html",
-      "word_count": 734,
+      "word_count": 841,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "994da077112ab0b9bdc16a036ede2757ad3c36f2497c7b8e75f80e736d1618b0"
+      "content_hash": "230d20fb10ec4f83c3edc07a1e073817092274752064f660efcafc5a2634a44a"
     },
     {
       "url": "/blog/obezite-cerrahisi-sonrasi-vitaminler.html",
@@ -12637,7 +12637,7 @@
       "h1": "Obezite Cerrahisi Yöntemleri",
       "meta_description": "Obezite cerrahisi yöntemleri nelerdir? Tüp mide, gastrik bypass ve diğer yaklaşımların temel farkları ve yöntem seçiminde dikkate alınan faktörler.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-cerrahisi-yontemleri.html",
-      "word_count": 888,
+      "word_count": 995,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -12646,7 +12646,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "a0e93c522fbf6063ed568afd613e400e498c67c7e228f5ee4fa206405ad77a28"
+      "content_hash": "abdda207f8e38a5554eeabe885126988f1e195896186620d0e74f13441d421e5"
     },
     {
       "url": "/blog/obezite-cerrahisinde-hastane-sureci.html",
@@ -14303,7 +14303,7 @@
       "h1": "Obezite ve Eşlik Eden Hastalıklar",
       "meta_description": "Obezite ile tip 2 diyabet, hipertansiyon, uyku apnesi ve yağlı karaciğer arasındaki ilişki ve cerrahi değerlendirmede komorbiditelerin önemi.",
       "canonical": "https://drerolvural.com.tr/blog/obezite-ve-eslik-eden-hastaliklar.html",
-      "word_count": 876,
+      "word_count": 983,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -14312,7 +14312,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "b7b9ab7876a39df46eab8b627e2ace57fed640159a0001557eaba43fbc96c825"
+      "content_hash": "0c18a42472a000067922f1989cafaa79a748dc3d7fbfea1c42942151c33c5d66"
     },
     {
       "url": "/blog/obezite-ve-fiziksel-aktivite.html",
@@ -17511,14 +17511,14 @@
       "h1": "Tüp Mide Ameliyatı Kimlere Uygulanır?",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-kimlere-uygulanir.html",
-      "word_count": 783,
+      "word_count": 890,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "de16b7b94fffa569fd588d53207e5ac48a8c0596f49003bd4c26026c935398ef"
+      "content_hash": "cbca98b7046271ce306212c32cd1deb6f487ea0a0b5218c57ab57329d0596e61"
     },
     {
       "url": "/blog/tup-mide-ameliyati-nedir.html",
@@ -17526,7 +17526,7 @@
       "h1": "Tüp Mide Ameliyatı Nedir? Mide Küçültme Ameliyatı Hakkında Bilmeniz Gerekenler",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-nedir.html",
-      "word_count": 1154,
+      "word_count": 1292,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -17535,7 +17535,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
-      "content_hash": "2010c5390eb66a82d97d852dd73ebe2a0cb10b945c656de57271766ccfc61818"
+      "content_hash": "90ac679a24ec671ef24abdfa09433aa50e168920363c14ec8d65d91936b02dad"
     },
     {
       "url": "/blog/tup-mide-ameliyati-oncesi-degerlendirme.html",
@@ -17543,7 +17543,7 @@
       "h1": "Tüp Mide Ameliyatı Öncesi Değerlendirme: Hangi Kontroller Yapılır?",
       "meta_description": "Tüp mide öncesinde tıbbi öykü, laboratuvar, beslenme, anestezi ve gerektiğinde farklı uzmanlık değerlendirmelerinin neden yapıldığını açıklayan rehber.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-oncesi-degerlendirme.html",
-      "word_count": 714,
+      "word_count": 852,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -17553,7 +17553,7 @@
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/side-effects",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
-      "content_hash": "b8fda75483d8d152aa058823a6b90f1c6605edf7c8f2b3edb9f9b9ecd7bd0b93"
+      "content_hash": "0c6ac82d36abc3274655a02aba759c5de387730ec5eaa5dc1598a99d42f44a80"
     },
     {
       "url": "/blog/tup-mide-ameliyati-oncesi-hazirlik.html",
@@ -17561,7 +17561,7 @@
       "h1": "Tüp Mide Ameliyatı Öncesi Hazırlık",
       "meta_description": "Tüp mide ameliyatı öncesi hazırlık; adaylık değerlendirmesi, genel sağlık durumunun incelenmesi, beslenme durumu ve ameliyat sonrası döneme hazırlığın birlikte ele alındığı bir süreçtir.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-oncesi-hazirlik.html",
-      "word_count": 772,
+      "word_count": 879,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -17570,7 +17570,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "05b4178691b5425c2891e4b23dfcb8b80a3dc773ca03f9c7888b033047f308dc"
+      "content_hash": "8f9dbde64837b7fa521a957feea0f720bfc665b69a1e1cec388e22322ecf5488"
     },
     {
       "url": "/blog/tup-mide-ameliyati-riskleri-ve-komplikasyonlari.html",
@@ -17635,7 +17635,7 @@
       "h1": "Tüp Mide Ameliyatı Sonrası Beslenme Nasıl Olmalı?",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-sonrasi-beslenme-nasil-olmali.html",
-      "word_count": 996,
+      "word_count": 1134,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -17644,7 +17644,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "a10c4b69360d6847b1cc50b9a6e4791af1229ac172fdedfa2baf32f66f8984ea"
+      "content_hash": "d9feeaad291ee5a53c8a1a7f653547f1753cc45dcab935aa68e8b1c2ed751b73"
     },
     {
       "url": "/blog/tup-mide-ameliyati-sonrasi-birinci-yil.html",
@@ -17994,7 +17994,7 @@
       "h1": "Tüp Mide Ameliyatı Sonrası Kilo Verme Neden Durur? Plato Dönemini Anlamak",
       "meta_description": "Tüp mide sonrası tartıda kilo kaybının yavaşlaması veya durması durumunda hangi faktörlerin değerlendirilmesi gerektiğini açıklayan rehber.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-sonrasi-kilo-verme-durmasi.html",
-      "word_count": 722,
+      "word_count": 860,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -18004,7 +18004,7 @@
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/side-effects",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
-      "content_hash": "fc2a5c629c68a0d2d755354b1155b81961b20994f2b02d15d5e725b93031ec40"
+      "content_hash": "df6b808b357ce284d8105753ebec3b7bfcb3744afe2e856d2ae13550046c487d"
     },
     {
       "url": "/blog/tup-mide-ameliyati-sonrasi-kilo-verme-hizi.html",
@@ -18202,7 +18202,7 @@
       "h1": "Tüp Mide Ameliyatı Sonrası Yaşam",
       "meta_description": "Tüp mide ameliyatından sonra amaç yalnızca kilo vermek değil, uzun dönemde sağlıklı beslenme, hareket ve düzenli tıbbi takip alışkanlıklarını sürdürebilmektir.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-sonrasi-yasam.html",
-      "word_count": 743,
+      "word_count": 850,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -18211,7 +18211,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "4d0eff9d13400a62de3d661d1277952eb8fdde73b5641bf3f975a93d184d0d49"
+      "content_hash": "46f5de8a030e0c0e891be5a1a71352287f8846dbb90e76f6077dd422bc6901bb"
     },
     {
       "url": "/blog/tup-mide-ameliyati-sonrasi-yuruyus.html",
@@ -18238,7 +18238,7 @@
       "h1": "Tüp Mide Ameliyatı Sonrası: Beslenme, Kilo Verme ve İyileşme Süreci",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-ameliyati-sonrasi.html",
-      "word_count": 1079,
+      "word_count": 1217,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -18247,7 +18247,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
-      "content_hash": "a4dd596cfe46f774e902eabe4e48f55ce1d0529ec6950ce17fbdef4b90221036"
+      "content_hash": "0bfa8de72287ef8faf24cef4231a11f365c945ecb5a95508466bbd6d6e1ae43a"
     },
     {
       "url": "/blog/tup-mide-darlik-ve-stenoz.html",
@@ -18433,14 +18433,14 @@
       "h1": "Tüp Mide mi Gastrik Bypass mı?",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-mi-gastrik-bypass-mi.html",
-      "word_count": 772,
+      "word_count": 879,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "a8e0af589ec739f0789350444fb9fac87039f6bafdaa5fb22940f252d447da3c"
+      "content_hash": "c1c7b537fedeebf5f590f02954d1a10e89c9e46a7a68690c563347e3081e4516"
     },
     {
       "url": "/blog/tup-mide-mi-mide-botoksu-mu.html",
@@ -18488,14 +18488,14 @@
       "h1": "Tüp Mide Ameliyatının Riskleri ve Komplikasyonları",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-riskleri-ve-komplikasyonlari.html",
-      "word_count": 774,
+      "word_count": 881,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "f7cc777d29b57e732c00b775fa74ced82518688b7a3c5860b9b9b33395660bf5"
+      "content_hash": "bc7add922e1037d3ba953c0bf43bfe2031c684d9acca8882c82c1e33ea5932a0"
     },
     {
       "url": "/blog/tup-mide-sonrasi-beslenme.html",
@@ -18503,14 +18503,14 @@
       "h1": "Tüp Mide Ameliyatı Sonrası Beslenme",
       "meta_description": "Tüp mide ameliyatı hakkında kapsamlı ve hasta odaklı bilgiler: adaylık, hazırlık, beslenme, kilo verme süreci, riskler ve ameliyat sonrası takip.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-sonrasi-beslenme.html",
-      "word_count": 753,
+      "word_count": 860,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "05a188521af3ec1188010f49b320f99239bc399fd722efc4fa3b2c54ef126c69"
+      "content_hash": "eac42a9898e22f19511b7cd50045c6441d66086811db8636e94358243f8a9302"
     },
     {
       "url": "/blog/tup-mide-sonrasi-egzersiz.html",
@@ -18638,7 +18638,7 @@
       "h1": "Tüp Mide Sonrası Kilo Verme Süreci",
       "meta_description": "Tüp mide sonrasında kilo kaybının hızı ve miktarı kişiden kişiye değişir. Cerrahinin etkisi, beslenme düzeni, fiziksel aktivite, metabolik durum ve uzun dönem takip birlikte değerlendirilmelidir.",
       "canonical": "https://drerolvural.com.tr/blog/tup-mide-sonrasi-kilo-verme-sureci.html",
-      "word_count": 776,
+      "word_count": 883,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -18647,7 +18647,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "4c31b57703d7b16780672cdf2ab18ab4ae4069fd38a2e4195cb481300a90fabc"
+      "content_hash": "e9190d41eb8932ed0ad2a8ad44f3832d43d8b55f4d4bd046481b18f99fa227d5"
     },
     {
       "url": "/blog/tup-mide-sonrasi-komplikasyonda-revizyon.html",
@@ -19775,14 +19775,14 @@
       "h1": "Doç. Dr. Erol Vural",
       "meta_description": "Doç. Dr. Erol Vural hakkında temel mesleki bilgiler, metabolik ve bariatrik cerrahi alanları ve hasta bilgilendirme yaklaşımı.",
       "canonical": "https://drerolvural.com.tr/doktor-erol-vural.html",
-      "word_count": 746,
+      "word_count": 852,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "76fe7fd3fddd3b41bc7d876cdae6cd3e4106c52073d482a9f684c74825cb3b82"
+      "content_hash": "9a9c48b6f459e765eef6d27e6eadbaa3047f1fc9c68890565009546362c02289"
     },
     {
       "url": "/gastrik-bypass.html",
@@ -19790,14 +19790,14 @@
       "h1": "Gastrik Bypass",
       "meta_description": "Gastrik bypass, Roux-en-Y ve mini gastrik bypass hakkında yöntem, adaylık, riskler ve ameliyat sonrası takip bilgileri.",
       "canonical": "https://drerolvural.com.tr/gastrik-bypass.html",
-      "word_count": 770,
+      "word_count": 876,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "84acbf4757a24d428a5de2e03ced5c1bb92da34c019c74b4ae5fc6c72882fe78"
+      "content_hash": "66c4a882c6cf3aa75fa2511d17dc876dbe5ebe14fbb6104bc3af9739f6a10776"
     },
     {
       "url": "/index.html",
@@ -19805,14 +19805,14 @@
       "h1": "Doç. Dr. Erol Vural | Tüp Mide ve Obezite Cerrahisi Hakkında Bilgi",
       "meta_description": "Doç. Dr. Erol Vural hakkında ve tüp mide, obezite cerrahisi, gastrik bypass ve metabolik cerrahi hakkında hasta odaklı, anlaşılır bilgiler.",
       "canonical": "https://drerolvural.com.tr/",
-      "word_count": 757,
+      "word_count": 863,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "3a774a33696562a33a9c1259bf85c02255020e25026fdbe89473bf3476ef2e5e"
+      "content_hash": "5cbe46532ddc81316ba295c6abea21538fd96f877cfaedb6d88f2c7749a06b29"
     },
     {
       "url": "/metabolik-cerrahi.html",
@@ -19820,14 +19820,14 @@
       "h1": "Metabolik Cerrahi",
       "meta_description": "Metabolik cerrahi, tip 2 diyabet, obezite ve cerrahi seçeneklerin kişisel değerlendirmesi hakkında hasta bilgilendirmesi.",
       "canonical": "https://drerolvural.com.tr/metabolik-cerrahi.html",
-      "word_count": 700,
+      "word_count": 806,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "4320c3b997d5935161eae910be004b13a3a7006223bce4c692315bf10db2e84f"
+      "content_hash": "90389130b82deb85f6cf8a895eb7c350cff3218b95a729cc1a92a3c819f1863f"
     },
     {
       "url": "/mide-balonu.html",
@@ -19835,14 +19835,14 @@
       "h1": "Mide Balonu",
       "meta_description": "Mide balonu hakkında uygulama, uygunluk, beklentiler, takip ve tüp mide ile farkları hakkında hasta bilgilendirmesi.",
       "canonical": "https://drerolvural.com.tr/mide-balonu.html",
-      "word_count": 734,
+      "word_count": 840,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "62852939576ff278e3d85573b380a8f5557bbf700258668022a8f3d8efa25bb9"
+      "content_hash": "e41c86070f286d5302fc1e4ca2d50dc195f140d32645db76202cfdb4a307f8d4"
     },
     {
       "url": "/mide-botoksu.html",
@@ -19850,14 +19850,14 @@
       "h1": "Mide Botoksu",
       "meta_description": "Mide botoksu hakkında yöntemin ne olduğu, kanıtların sınırları, kimlerde değerlendirilebileceği ve diğer kilo yönetimi seçeneklerinden farkları.",
       "canonical": "https://drerolvural.com.tr/mide-botoksu.html",
-      "word_count": 742,
+      "word_count": 848,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "3f3bdb6d1682647e2d51f1e5d76b224e2ab06f7b819f351cd53cf48f6b09b368"
+      "content_hash": "9aa28913e2cd79da1cd1023b871894c6a641049b940e4fd7ecab2f8d828aa03d"
     },
     {
       "url": "/obezite-cerrahisi.html",
@@ -19865,14 +19865,14 @@
       "h1": "Obezite Cerrahisi",
       "meta_description": "Obezite cerrahisi, tüp mide, gastrik bypass ve diğer kilo yönetimi seçenekleri hakkında kapsamlı hasta bilgilendirmesi.",
       "canonical": "https://drerolvural.com.tr/obezite-cerrahisi.html",
-      "word_count": 797,
+      "word_count": 903,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "f86bbddcbb4aa2770c3e3d829f1c86e08a9337ad150e8011f8b969a6976c9015"
+      "content_hash": "a6221c1e5ec73fd94906d5853e295a8e1a23de86b8d86f834f4784661514ca16"
     },
     {
       "url": "/obezite-tedavisi.html",
@@ -19880,14 +19880,14 @@
       "h1": "Obezite Tedavisi",
       "meta_description": "Obezite tedavisinde beslenme, fiziksel aktivite, davranışsal yaklaşımlar, ilaçlar, endoskopik yöntemler ve bariatrik cerrahinin yeri hakkında kapsamlı bilgi.",
       "canonical": "https://drerolvural.com.tr/obezite-tedavisi.html",
-      "word_count": 718,
+      "word_count": 824,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "1ff29324c062b19f26e54517dd92eedb380f0c16b7cf702008d98ea10a9b1a83"
+      "content_hash": "e2f0a9389b746f0da8064ae8a6e37ce02d60549db59f8b62a65a029f6dee210d"
     },
     {
       "url": "/revizyon-cerrahisi.html",
@@ -19895,14 +19895,14 @@
       "h1": "Revizyon Cerrahisi",
       "meta_description": "Revizyon cerrahisi; yetersiz kilo kaybı, kilo geri alımı, eşlik eden hastalıkların devamı veya bazı komplikasyonlar sonrasında kişiye özel değerlendirilir.",
       "canonical": "https://drerolvural.com.tr/revizyon-cerrahisi.html",
-      "word_count": 736,
+      "word_count": 841,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "892d52d838a7f21155afd05748295b200a5441f87a698cb847317c868d4b7e16"
+      "content_hash": "8e4a9e503c941c6b003bd2e55ceb26b1300be5b610eaf54da71e46066aeb1269"
     },
     {
       "url": "/tup-mide-ameliyati.html",
@@ -19910,7 +19910,7 @@
       "h1": "Tüp Mide Ameliyatı (Sleeve Gastrektomi)",
       "meta_description": "Tüp mide ameliyatı (sleeve gastrektomi), mide küçültme ameliyatı, adaylık değerlendirmesi, riskler ve ameliyat sonrası takip hakkında bilgiler.",
       "canonical": "https://drerolvural.com.tr/tup-mide-ameliyati.html",
-      "word_count": 1556,
+      "word_count": 1662,
       "headings": [],
       "has_faq": true,
       "external_sources": [
@@ -19919,7 +19919,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "0b6341390212279c3737d5a1e56643ae2bc72f27b96043e8ecec06d672394c64"
+      "content_hash": "167bece4ad45710ddfd2b95f5b976a036757480ba386370c8c101b5ce69fb9e1"
     },
     {
       "url": "/uzmanindan-bilgiler.html",
@@ -19927,14 +19927,14 @@
       "h1": "Uzmanından Bilgiler",
       "meta_description": "Doç. Dr. Erol Vural tarafından hazırlanan tüp mide, obezite cerrahisi, gastrik bypass ve metabolik cerrahi hasta bilgi merkezi.",
       "canonical": "https://drerolvural.com.tr/uzmanindan-bilgiler.html",
-      "word_count": 708,
+      "word_count": 814,
       "headings": [],
       "has_faq": true,
       "external_sources": [
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "4598d576abb2183dd51ab45c8b367d02ec6ad44a123ab53cf9b7872cfe3c17f6"
+      "content_hash": "39c0b913f40dfecd1324deb86754921c75bb756c6115443720b8c3ed73a161b5"
     }
   ]
 }
