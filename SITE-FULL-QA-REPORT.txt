@@ -2,12 +2,12 @@ FULL SITE QA REPORT
 ===================
 HTML pages scanned: 1022
 HTML pages modified: 27
-Pages with accidental standalone <p>e</p> removed: 1
-Pages receiving/repairing mobile menu: 27
-Missing mobile toggles inserted: 15
+Pages with accidental standalone <p>e</p> removed: 0
+Pages receiving/repairing mobile menu: 0
+Missing mobile toggles inserted: 0
 Broken local HTML/document links remaining: 0
 Broken local image links remaining: 0
-Duplicate HTML ids: 27
+Duplicate HTML ids: 0
 Missing core meta checks: 0
 
 BROKEN LINKS:
@@ -15,35 +15,7 @@ BROKEN LINKS:
 BROKEN IMAGES:
 
 DUPLICATE IDS:
-tup-mide-ameliyati.html: ev-mobile-menu-v3
-bilgi-merkezi-yaklasimi.html: ev-mobile-menu-v3
-doktor-erol-vural.html: ev-mobile-menu-v3
-metabolik-cerrahi.html: ev-mobile-menu-v3
-uzmanindan-bilgiler.html: ev-mobile-menu-v3
-gastrik-bypass.html: ev-mobile-menu-v3
-revizyon-cerrahisi.html: ev-mobile-menu-v3
-mide-balonu.html: ev-mobile-menu-v3
-mide-botoksu.html: ev-mobile-menu-v3
-index.html: ev-mobile-menu-v3
-obezite-cerrahisi.html: ev-mobile-menu-v3
-obezite-tedavisi.html: ev-mobile-menu-v3
-blog/obezite-ve-eslik-eden-hastaliklar.html: ev-mobile-menu-v3
-blog/tup-mide-ameliyati-oncesi-hazirlik.html: ev-mobile-menu-v3
-blog/obezite-cerrahisi-bmi-vki-nasil-degerlendirilir.html: ev-mobile-menu-v3
-blog/tup-mide-riskleri-ve-komplikasyonlari.html: ev-mobile-menu-v3
-blog/mide-balonu-kimler-icin-uygun.html: ev-mobile-menu-v3
-blog/mide-botoksu-kimler-icin-uygun.html: ev-mobile-menu-v3
-blog/obezite-cerrahisi-kimlere-uygulanir.html: ev-mobile-menu-v3
-blog/tup-mide-sonrasi-beslenme.html: ev-mobile-menu-v3
-blog/tup-mide-sonrasi-kilo-verme-sureci.html: ev-mobile-menu-v3
-blog/tup-mide-ameliyati-sonrasi-yasam.html: ev-mobile-menu-v3
-blog/obezite-cerrahisi-yontemleri.html: ev-mobile-menu-v3
-blog/tup-mide-mi-gastrik-bypass-mi.html: ev-mobile-menu-v3
-blog/mide-kucultme-ameliyati-nasil-yapilir.html: ev-mobile-menu-v3
-blog/tup-mide-ameliyati-kimlere-uygulanir.html: ev-mobile-menu-v3
-blog/obezite-cerrahisi-sonrasi-takip.html: ev-mobile-menu-v3
 
 MISSING CORE META:
 
 PLACEHOLDER E CLEANUP:
-revizyon-cerrahisi.html
