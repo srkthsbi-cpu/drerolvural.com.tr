@@ -88,7 +88,7 @@ jobs:
               return False
 
           updated = 0
-          href_repairs = 0
+          href_repairs = [0]
           missing_before = []
           missing_after = []
           viewport_added = 0
@@ -131,7 +131,7 @@ jobs:
                       if rel == ".": rel = ""
                       new_url = rel + suffix
                       if new_url != url:
-                          href_repairs += 1
+                          href_repairs[0] += 1
                           return m.group("prefix")+m.group("q")+new_url+m.group("q")
                       return m.group(0)
 
@@ -167,7 +167,7 @@ jobs:
           report.append("="*60)
           report.append(f"HTML pages scanned: {len(html_paths)}")
           report.append(f"HTML pages modified: {updated}")
-          report.append(f"Internal links repaired via redirect/legacy mapping: {href_repairs}")
+          report.append(f"Internal links repaired via redirect/legacy mapping: {href_repairs[0]}")
           report.append(f"Pages receiving mobile layout fix: {mobile_fix_added}")
           report.append(f"Pages missing viewport before normalization: {viewport_added}")
           report.append(f"Missing internal links remaining after repair: {len(missing_after)}")
