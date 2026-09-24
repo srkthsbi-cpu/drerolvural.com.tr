@@ -1,0 +1,80 @@
+name: Repair remaining stale internal links
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  repair-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair stale links and verify
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          root=Path(".")
+          fixes={
+            "tup-mide-ameliyati-nedir-yeni.html":"tup-mide-ameliyati-nedir.html",
+            "obezite-cerrahisi-nedir-yeni.html":"obezite-cerrahisi-nedir.html",
+            "tup-mide-ameliyati-sonrasi-yasam-yeni.html":"tup-mide-ameliyati-sonrasi-yasam.html",
+            "tup-mide-ameliyati-sonrasi-beslenme-yeni.html":"tup-mide-sonrasi-beslenme.html",
+            "tup-mide-ameliyati-riskleri-yeni.html":"tup-mide-ameliyati-riskleri-ve-komplikasyonlari.html",
+          }
+          changed=0
+          replacements=0
+          for p in root.rglob("*.html"):
+            if ".git" in p.parts: continue
+            s=p.read_text(encoding="utf-8",errors="replace")
+            old=s
+            for a,b in fixes.items():
+              n=s.count(a)
+              if n:
+                s=s.replace(a,b)
+                replacements+=n
+            if s!=old:
+              p.write_text(s,encoding="utf-8",newline="\n")
+              changed+=1
+          unresolved=[]
+          files={p.as_posix() for p in root.rglob("*") if p.is_file() and ".git" not in p.parts}
+          href_re=re.compile(r'\b(?:href|src)\s*=\s*["\']([^"\']+)["\']',re.I)
+          from urllib.parse import urlsplit
+          import posixpath
+          for p in root.rglob("*.html"):
+            if ".git" in p.parts: continue
+            for url in href_re.findall(p.read_text(encoding="utf-8",errors="replace")):
+              u=urlsplit(url)
+              if u.scheme or u.netloc or not u.path or u.path.startswith("#"): continue
+              target=posixpath.normpath(posixpath.join(p.parent.as_posix(),u.path))
+              if target not in files and target not in {x[:-5] for x in files if x.endswith(".html")}:
+                unresolved.append((p.as_posix(),url,target))
+          report=Path("SITE-QA-REPORT.txt")
+          txt=report.read_text(encoding="utf-8",errors="replace") if report.exists() else ""
+          txt += "\n\nFOLLOW-UP LINK REPAIR\n"+"="*60+"\n"
+          txt += f"Pages modified in follow-up: {changed}\n"
+          txt += f"Stale internal-link references repaired: {replacements}\n"
+          txt += f"Unresolved internal links after follow-up: {len(unresolved)}\n"
+          if unresolved:
+            for a,b,c in unresolved:
+              txt += f"- {a} -> {b} (resolved: {c})\n"
+          else:
+            txt += "RESULT: No unresolved relative/internal links remain in the scanned HTML.\n"
+          report.write_text(txt,encoding="utf-8")
+          print(txt[-4000:])
+          if unresolved:
+            raise SystemExit("Unresolved internal links remain; review the report.")
+          PY
+      - name: Commit and remove one-time workflow
+        shell: bash
+        run: |
+          rm -f .github/workflows/site-repair-links.yml
+          git config user.name "srkthsbi-cpu"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Repair remaining stale internal links"
+          git push
