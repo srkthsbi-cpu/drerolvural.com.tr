@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T01:34:43.920297+00:00",
-  "page_count": 1022,
+  "generated_at": "2026-09-24T06:03:48.317962+00:00",
+  "page_count": 1024,
   "entries": [
     {
       "url": "/bilgi-merkezi-yaklasimi.html",
@@ -14,7 +14,7 @@
       "external_sources": [
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "aeb9ae2e968c9be9159c988e85766f4e4d3e4fccf584df0fb3fe172ac3da6e19"
+      "content_hash": "6be7b7fbd1c83e444c0160fc24d3f1baa85943a6e75b14bf9c6c3d0c1243e131"
     },
     {
       "url": "/blog/ameliyat-gunu-oncesi-yapilmasi-gerekenler.html",
@@ -2137,6 +2137,23 @@
       "content_hash": "85a82cc64d37aa07f51778ae0e2108d36c3f7384d2e72b2ad49618d7146b9c20"
     },
     {
+      "url": "/blog/bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
+      "title": "Bariatrik Cerrahi Sonrası Böbrek Taşı Riski: Nedenleri ve Korunma Yolları | Doç. Dr. Erol Vural",
+      "h1": "Bariatrik Cerrahi Sonrası Böbrek Taşı Riski: Nedenleri ve Korunma Yolları",
+      "meta_description": "Bariatrik cerrahi sonrası böbrek taşı riski neden artabilir? Özellikle gastrik bypass sonrası sıvı, oksalat, kalsiyum ve sitrat dengesinin rolünü; belirtileri, değerlendirmeyi ve korunma yaklaşımını açıklayan kapsamlı rehber.",
+      "canonical": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
+      "word_count": 1258,
+      "headings": [],
+      "has_faq": true,
+      "external_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/27396545/",
+        "https://pubmed.ncbi.nlm.nih.gov/32429374/",
+        "https://pubmed.ncbi.nlm.nih.gov/39632988/",
+        "https://www.instagram.com/tupmidedoktoru/"
+      ],
+      "content_hash": "5f2c6acf92ff6ebfe97cf7cec157c0356ed693c3196a76d4303fac3c692d0caf"
+    },
+    {
       "url": "/blog/bariatrik-cerrahi-sonrasi-bulanti.html",
       "title": "Bariatrik cerrahi sonrası bulantı | Doç. Dr. Erol Vural",
       "h1": "Bariatrik cerrahi sonrası bulantı",
@@ -2929,6 +2946,24 @@
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
       "content_hash": "5e9f242555ac5c35808a694df4e16dcf6b8c97d86bccaafe49a542cc84e7fd3e"
+    },
+    {
+      "url": "/blog/bariatrik-cerrahi-sonrasi-ilac-emilimi.html",
+      "title": "Bariatrik Cerrahi Sonrası İlaç Emilimi Nasıl Değişir? | Doç. Dr. Erol Vural",
+      "h1": "Bariatrik Cerrahi Sonrası İlaç Emilimi Nasıl Değişir?",
+      "meta_description": "Bariatrik cerrahi sonrası ilaç emilimi neden değişebilir? Tüp mide ve gastrik bypass sonrası tablet, kapsül ve sıvı ilaçların emilimini etkileyen faktörleri; hangi ilaçlarda daha dikkatli olunması gerektiğini ve takip yaklaşımını açıklayan rehber.",
+      "canonical": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-ilac-emilimi.html",
+      "word_count": 1194,
+      "headings": [],
+      "has_faq": true,
+      "external_sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9291886/",
+        "https://pubmed.ncbi.nlm.nih.gov/37857987/",
+        "https://pubmed.ncbi.nlm.nih.gov/38710656/",
+        "https://pubmed.ncbi.nlm.nih.gov/39887310/",
+        "https://www.instagram.com/tupmidedoktoru/"
+      ],
+      "content_hash": "65fca67953c2be7e634e944374a67ef875d41b6fb65d0fd24ff5d29aa5626c6d"
     },
     {
       "url": "/blog/bariatrik-cerrahi-sonrasi-ise-donus.html",
@@ -10861,7 +10896,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "7c518b00c62ae4e0e98cc770fa1e61eb77e2c33bf2a4ab3e30b527dcbd11221e"
+      "content_hash": "89eb2e6c0ec643181780e0ade142e59b90dbb0fd12199ad9efb0881c69aceaef"
     },
     {
       "url": "/blog/mide-balonu-mu-tup-mide-mi-hangisi-size-daha-uygun.html",
@@ -11220,7 +11255,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "d13d90393c1f992dedb14674880d9bc785689653542071402972f7fb3b80ac04"
+      "content_hash": "d25e9d39031506e95568e880f61f79ae312734e9766040365125f3af6ad1ae46"
     },
     {
       "url": "/blog/mide-botoksu-komplikasyonlari.html",
@@ -11792,7 +11827,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "c548a6cef4e0450f8e45ee7821741d4ac655d2faa9a35294d15e46478924d734"
+      "content_hash": "6825677faee42e3b39b9750db5fff1ef9546d75f55d37e65cf28186d8d957878"
     },
     {
       "url": "/blog/multidisipliner-degerlendirme-neden-onemlidir.html",
@@ -11829,7 +11864,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "cbfc7b4df2666fe9e45e71e2ddba591724c02ae1a5dc79548ed5680c756a3b2c"
+      "content_hash": "ca30fa8edaf621c7081b86fd5889af58e078c8376c1131331355350171b1550a"
     },
     {
       "url": "/blog/obezite-cerrahisi-erken-donem-komplikasyonlari.html",
@@ -11900,7 +11935,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "4aeee98ec4ca2a9b2c7d1f9a6d7575da7b8e8c37bfee92cc14b101b9b6f126a2"
+      "content_hash": "d92487bc4c4709be33b598487a3e0925263137aaf301952dbee29487b8671efe"
     },
     {
       "url": "/blog/obezite-cerrahisi-komplikasyonlari.html",
@@ -12315,7 +12350,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "230d20fb10ec4f83c3edc07a1e073817092274752064f660efcafc5a2634a44a"
+      "content_hash": "3021e4bf48fb4a72b2c9fb10064c4967823c12f7e819d39c14ffb663a84ab930"
     },
     {
       "url": "/blog/obezite-cerrahisi-sonrasi-vitaminler.html",
@@ -12646,7 +12681,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "abdda207f8e38a5554eeabe885126988f1e195896186620d0e74f13441d421e5"
+      "content_hash": "e41dc9163c6f6704ab136d094ddf094b89be2fa647bddd84a6ecadd8d2c9200b"
     },
     {
       "url": "/blog/obezite-cerrahisinde-hastane-sureci.html",
@@ -14312,7 +14347,7 @@
         "https://www.instagram.com/tupmidedoktoru/",
         "https://www.nice.org.uk/guidance/ng246/chapter/medicines-and-surgery"
       ],
-      "content_hash": "0c18a42472a000067922f1989cafaa79a748dc3d7fbfea1c42942151c33c5d66"
+      "content_hash": "be2245725a15be8bd08b43624ba6b45170d857dbe26b8eb8ff917e5fb5cfd4d4"
     },
     {
       "url": "/blog/obezite-ve-fiziksel-aktivite.html",
@@ -17518,7 +17553,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "cbca98b7046271ce306212c32cd1deb6f487ea0a0b5218c57ab57329d0596e61"
+      "content_hash": "184d2011e2ee0754c3589d9b9ad88cf7a4ccb59e2c5bec1af3a6f9812ccd9e02"
     },
     {
       "url": "/blog/tup-mide-ameliyati-nedir.html",
@@ -17570,7 +17605,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "8f9dbde64837b7fa521a957feea0f720bfc665b69a1e1cec388e22322ecf5488"
+      "content_hash": "a01f826ce1c8eabd4093498d319683e623769b79e178d0f0a7f04510c092e0ea"
     },
     {
       "url": "/blog/tup-mide-ameliyati-riskleri-ve-komplikasyonlari.html",
@@ -18211,7 +18246,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "46f5de8a030e0c0e891be5a1a71352287f8846dbb90e76f6077dd422bc6901bb"
+      "content_hash": "7335f0f970186c105d645f779ae811ef588a2c06b31cbeff21c7c86571bb2e6f"
     },
     {
       "url": "/blog/tup-mide-ameliyati-sonrasi-yuruyus.html",
@@ -18440,7 +18475,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "c1c7b537fedeebf5f590f02954d1a10e89c9e46a7a68690c563347e3081e4516"
+      "content_hash": "d3529bddcafede056dae24a700c0ad9838cbc44162b627fe3a597de1df2239e8"
     },
     {
       "url": "/blog/tup-mide-mi-mide-botoksu-mu.html",
@@ -18495,7 +18530,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "bc7add922e1037d3ba953c0bf43bfe2031c684d9acca8882c82c1e33ea5932a0"
+      "content_hash": "dd878657e2765c0a12419bd69e25512cb88be3e2c0e9ad6ca6cc96fe8ccdde78"
     },
     {
       "url": "/blog/tup-mide-sonrasi-beslenme.html",
@@ -18510,7 +18545,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "eac42a9898e22f19511b7cd50045c6441d66086811db8636e94358243f8a9302"
+      "content_hash": "87c8c55df1f5eb56a9c0978a02018c3d8071ce5896825f356f2a212a787f1131"
     },
     {
       "url": "/blog/tup-mide-sonrasi-egzersiz.html",
@@ -18647,7 +18682,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "e9190d41eb8932ed0ad2a8ad44f3832d43d8b55f4d4bd046481b18f99fa227d5"
+      "content_hash": "dfa23c919547c932091d78cc9f7835521e677eace644c57147e8336078c340fb"
     },
     {
       "url": "/blog/tup-mide-sonrasi-komplikasyonda-revizyon.html",
@@ -19782,7 +19817,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "9a9c48b6f459e765eef6d27e6eadbaa3047f1fc9c68890565009546362c02289"
+      "content_hash": "a1af99d78d23071841b941de87507024639c55d034dc9b33307ea68f300e122a"
     },
     {
       "url": "/gastrik-bypass.html",
@@ -19797,7 +19832,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "66c4a882c6cf3aa75fa2511d17dc876dbe5ebe14fbb6104bc3af9739f6a10776"
+      "content_hash": "35ae97fd69282526d516d082634952c0e0188dd55e61aaee15b6043be028b37b"
     },
     {
       "url": "/index.html",
@@ -19812,7 +19847,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "5cbe46532ddc81316ba295c6abea21538fd96f877cfaedb6d88f2c7749a06b29"
+      "content_hash": "1c939c2c352c93d74d568decc98f7b0ab9de5e165ae5102282355a26ac92b07c"
     },
     {
       "url": "/metabolik-cerrahi.html",
@@ -19827,7 +19862,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "90389130b82deb85f6cf8a895eb7c350cff3218b95a729cc1a92a3c819f1863f"
+      "content_hash": "a9e901393e12f609a6d6bcdd9c755de4caa18fd8ccede21c0ca5d58ee5346e23"
     },
     {
       "url": "/mide-balonu.html",
@@ -19842,7 +19877,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "e41c86070f286d5302fc1e4ca2d50dc195f140d32645db76202cfdb4a307f8d4"
+      "content_hash": "842562f6aac60b731c5f185ec4881a27b573cb9dc46041a1f10f46859bdaa2d2"
     },
     {
       "url": "/mide-botoksu.html",
@@ -19857,7 +19892,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "9aa28913e2cd79da1cd1023b871894c6a641049b940e4fd7ecab2f8d828aa03d"
+      "content_hash": "650efd4fb8e64cad031a901c70353846636c617e320d95944c8425cb666e7c20"
     },
     {
       "url": "/obezite-cerrahisi.html",
@@ -19872,7 +19907,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "a6221c1e5ec73fd94906d5853e295a8e1a23de86b8d86f834f4784661514ca16"
+      "content_hash": "4e1774a84cc87ea4d430eec49fdfca5bbdd38bd61056efba34b29b83e2518411"
     },
     {
       "url": "/obezite-tedavisi.html",
@@ -19887,7 +19922,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "e2f0a9389b746f0da8064ae8a6e37ce02d60549db59f8b62a65a029f6dee210d"
+      "content_hash": "4378bc3a6d9e511726d839635ad0a646704622faf813c0498e50dd75e15f7e54"
     },
     {
       "url": "/revizyon-cerrahisi.html",
@@ -19902,7 +19937,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "8e4a9e503c941c6b003bd2e55ceb26b1300be5b610eaf54da71e46066aeb1269"
+      "content_hash": "4219bc2b5ca05496a339d359194477039dcda0190f3745dfdd72ceab83b09229"
     },
     {
       "url": "/tup-mide-ameliyati.html",
@@ -19919,7 +19954,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "167bece4ad45710ddfd2b95f5b976a036757480ba386370c8c101b5ce69fb9e1"
+      "content_hash": "9899c0e694a800642b4b720cdd60526b95636c3fcbb1380b4c51a376734dd35e"
     },
     {
       "url": "/uzmanindan-bilgiler.html",
@@ -19934,7 +19969,7 @@
         "https://wa.me/905414569367",
         "https://www.instagram.com/tupmidedoktoru/"
       ],
-      "content_hash": "39c0b913f40dfecd1324deb86754921c75bb756c6115443720b8c3ed73a161b5"
+      "content_hash": "2b23c53368359e0fe9685e21802c0ccaf5c53deea43e57ccf315af9b287daee8"
     }
   ]
 }
