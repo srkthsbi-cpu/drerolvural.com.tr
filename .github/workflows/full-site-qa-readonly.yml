@@ -1,4 +1,4 @@
-name: Full site QA (read-only)
+name: Full site QA + visual repair
 
 on:
   push:
@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   qa:
@@ -21,6 +21,87 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Repair article-page navigation and visual consistency
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          pages=sorted(Path('.').rglob('*.html'))
+          pages=[p for p in pages if '.git' not in p.parts]
+          changed=[]
+
+          css=r'''
+<style id="ev-article-nav-v3-style">
+.ev-article-nav-toggle{display:none!important;width:42px;height:42px;padding:0;border:0;border-radius:50%;background:#eef8fa;color:#005082;align-items:center;justify-content:center;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 3px 12px rgba(0,80,130,.10)}
+.ev-article-nav{display:flex;align-items:center;gap:6px;margin-left:auto}
+.ev-article-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 9px;color:#005082!important;text-decoration:none!important;font-size:12px;font-weight:600;line-height:1.2;border-radius:10px}
+.ev-article-nav a:hover{background:#eef8fa;color:#009bb4!important}
+.ev-article-nav .ev-nav-cta{padding:9px 14px;color:#fff!important;background:linear-gradient(135deg,#009bb4,#35a9bf);border-radius:999px;box-shadow:0 5px 16px rgba(0,155,180,.18)}
+@media(max-width:1100px){
+  .ev-article-nav-toggle{display:inline-flex!important}
+  .ev-article-nav{position:absolute!important;top:calc(100% + 8px)!important;right:12px!important;left:12px!important;display:none!important;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:12px!important;background:#fff!important;border:1px solid #dcebf0!important;border-radius:18px!important;box-shadow:0 14px 35px rgba(0,80,130,.16)!important;max-height:calc(100vh - 90px)!important;overflow:auto!important;z-index:2000!important}
+  .ev-article-nav.open{display:flex!important}
+  .ev-article-nav a{width:100%!important;justify-content:flex-start!important;padding:11px 13px!important;font-size:14px!important;border-radius:11px!important}
+  .ev-article-nav .ev-nav-cta{justify-content:center!important}
+}
+@media(max-width:700px){
+  header{min-height:64px!important;padding:8px 16px!important}
+  header img{width:165px!important;max-width:55vw!important}
+  .ev-article-nav-toggle{width:40px;height:40px}
+}
+</style>
+'''
+          js=r'''
+<script id="ev-article-nav-v3-script">
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.ev-article-nav-toggle').forEach(function(btn){
+    var nav=document.getElementById(btn.getAttribute('aria-controls'));
+    if(!nav) return;
+    function closeNav(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Menüyü aç');btn.textContent='☰';}
+    btn.addEventListener('click',function(e){e.stopPropagation();var open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');btn.setAttribute('aria-label',open?'Menüyü kapat':'Menüyü aç');btn.textContent=open?'×':'☰';});
+    nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeNav);});
+    document.addEventListener('click',function(e){if(!nav.contains(e.target)&&!btn.contains(e.target))closeNav();});
+    window.addEventListener('resize',function(){if(window.innerWidth>1100)closeNav();});
+  });
+});
+</script>
+'''
+
+          for p in pages:
+              s=p.read_text(encoding='utf-8',errors='ignore')
+              if 'class="mobile-nav-toggle"' in s or 'id="ev-article-nav-v3-style"' in s:
+                  continue
+              if '<header' not in s or '</header>' not in s or '<main' not in s or 'class="tools"' not in s:
+                  continue
+              depth=len(p.parts)-1
+              root='../'*depth
+              nav_id='ev-article-primary-navigation'
+              links=[
+                (root+'index.html','Anasayfa'),
+                (root+'doktor-erol-vural.html','Doktor Erol Vural'),
+                (root+'tup-mide-ameliyati.html','Tüp Mide'),
+                (root+'obezite-cerrahisi.html','Obezite Cerrahisi'),
+                (root+'uzmanindan-bilgiler.html','Uzmanından Bilgiler'),
+                (root+'iletisim.html','İletişim'),
+                ('https://wa.me/905414569367','WhatsApp')
+              ]
+              nav=''.join(f'<a href="{href}"'+(' class="ev-nav-cta" rel="noopener" target="_blank"' if href.startswith('https://wa.me/') else '')+f'>{label}</a>' for href,label in links)
+              block=f'<button class="ev-article-nav-toggle" type="button" aria-expanded="false" aria-controls="{nav_id}" aria-label="Menüyü aç">☰</button><nav class="ev-article-nav" id="{nav_id}" aria-label="Ana menü">{nav}</nav>'
+              s=s.replace('</header>',block+'</header>',1)
+              s=s.replace('</head>',css+js+'</head>',1)
+              p.write_text(s,encoding='utf-8')
+              changed.append(p.as_posix())
+
+          Path('VISUAL-NAV-V3-REPORT.txt').write_text(
+            'GLOBAL VISUAL NAV V3\n=====================\n'
+            f'HTML pages scanned: {len(pages)}\n'
+            f'Pages standardized with article navigation: {len(changed)}\n\n' +
+            '\n'.join(changed),
+            encoding='utf-8')
+          print(f'Scanned {len(pages)} HTML pages; standardized {len(changed)}.')
+          PY
+
       - name: Static site QA
         shell: bash
         run: |
@@ -79,3 +160,17 @@ jobs:
         with:
           name: site-full-qa-report
           path: SITE-FULL-QA-REPORT.txt
+
+      - name: Commit visual repairs and QA report
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "srkthsbi-cpu"
+          git config user.email "srkthsbi@gmail.com"
+          git add '*.html' SITE-FULL-QA-REPORT.txt VISUAL-NAV-V3-REPORT.txt
+          if git diff --cached --quiet; then
+            echo "No visual or QA file changes to commit."
+            exit 0
+          fi
+          git commit -m "Repair global visual navigation and site QA"
+          git push
