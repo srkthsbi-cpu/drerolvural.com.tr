@@ -1,7 +1,7 @@
 FULL SITE QA REPORT
 ===================
-HTML pages scanned: 1022
-HTML pages modified: 27
+HTML pages scanned: 1023
+HTML pages modified: 0
 Pages with accidental standalone <p>e</p> removed: 0
 Pages receiving/repairing mobile menu: 0
 Missing mobile toggles inserted: 0
