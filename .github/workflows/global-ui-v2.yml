@@ -17,229 +17,92 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Standardize header footer on every HTML page
-        shell: python
         run: |
+          python3 - <<'PY'
           from pathlib import Path
           import re
 
-          root = Path('.')
-          files = [p for p in root.rglob('*.html') if '.git' not in p.parts and 'node_modules' not in p.parts]
+          files = [p for p in Path('.').rglob('*.html') if '.git' not in p.parts and 'node_modules' not in p.parts]
 
           fa_link = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">'
 
-          css = r'''
-<style id="ev-global-ui-v2">
-/* One consistent header/footer language + contact system */
-header{
-  min-height:72px;
-  padding:9px 5%!important;
-  gap:14px;
-}
-header img{
-  display:block!important;
-  width:185px!important;
-  height:auto!important;
-  max-width:58vw!important;
-  max-height:none!important;
-  object-fit:contain;
-}
-.tools{
-  display:flex!important;
-  align-items:center!important;
-  gap:10px!important;
-}
-.back{
-  display:inline-flex!important;
-  align-items:center;
-  justify-content:center;
-  min-height:42px;
-  padding:9px 17px!important;
-  border-radius:999px!important;
-  background:linear-gradient(135deg,#009bb4,#35a9bf)!important;
-  color:#fff!important;
-  text-decoration:none!important;
-  font-weight:600;
-  box-shadow:0 5px 16px rgba(0,155,180,.18);
-}
-.langbox,.langmenu,#langMenuContent,#currentLangText{
-  display:none!important;
-}
-footer{
-  margin-top:50px!important;
-  padding:44px 18px 28px!important;
-  background:linear-gradient(180deg,#075b89 0%,#005082 100%)!important;
-  color:#fff!important;
-  border-top:4px solid #009bb4;
-  box-shadow:0 -10px 30px rgba(0,80,130,.10);
-  text-align:center!important;
-}
-.ev-footer-inner{
-  max-width:900px;
-  margin:0 auto;
-}
-.ev-footer-logo{
-  display:block!important;
-  width:245px!important;
-  height:auto!important;
-  max-width:72vw!important;
-  margin:0 auto 20px!important;
-  filter:brightness(0) invert(1)!important;
-  object-fit:contain;
-}
-.ev-footer-copy{
-  max-width:760px;
-  margin:0 auto 17px!important;
-  padding-top:17px;
-  border-top:1px solid rgba(255,255,255,.22);
-  font-size:13px!important;
-  line-height:1.7;
-  opacity:.94;
-}
-.ev-contact-footer{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:center!important;
-  gap:10px!important;
-  max-width:760px;
-  margin:0 auto!important;
-  padding:0 6px;
-}
-.ev-contact-footer a{
-  display:inline-flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  gap:8px!important;
-  min-height:42px;
-  padding:9px 16px!important;
-  border:1px solid rgba(255,255,255,.25)!important;
-  border-radius:999px!important;
-  color:#fff!important;
-  background:rgba(255,255,255,.09)!important;
-  text-decoration:none!important;
-  font-size:14px!important;
-  line-height:1.25;
-  box-shadow:0 4px 14px rgba(0,0,0,.08);
-  transition:transform .2s ease,background .2s ease;
-}
-.ev-contact-footer a:hover{
-  background:rgba(255,255,255,.16)!important;
-  transform:translateY(-1px);
-}
-.ev-contact-footer i{
-  font-size:16px;
-  width:18px;
-  text-align:center;
-}
-.ev-contact-footer .phone-icon{color:#fff}
-.ev-contact-footer .instagram-icon{color:#fff}
-@media screen and (max-width:700px){
-  header{
-    min-height:64px;
-    padding:8px 16px!important;
-  }
-  header img{
-    width:165px!important;
-    max-width:55vw!important;
-  }
-  .back{
-    min-height:38px;
-    padding:8px 14px!important;
-    font-size:14px!important;
-  }
-  footer{
-    margin-top:40px!important;
-    padding:35px 14px 24px!important;
-  }
-  .ev-footer-logo{
-    width:215px!important;
-    max-width:70vw!important;
-    margin-bottom:18px!important;
-  }
-  .ev-footer-copy{
-    font-size:12px!important;
-    padding-top:15px;
-  }
-  .ev-contact-footer{
-    gap:8px!important;
-  }
-  .ev-contact-footer a{
-    min-height:38px;
-    padding:8px 12px!important;
-    font-size:12.5px!important;
-  }
-}
-</style>
-'''
+          css = r'''<style id="ev-global-ui-v2">
+          header{min-height:72px;padding:9px 5%!important;gap:14px}
+          header img{display:block!important;width:185px!important;height:auto!important;max-width:58vw!important;max-height:none!important;object-fit:contain}
+          .tools{display:flex!important;align-items:center!important;gap:10px!important}
+          .back{display:inline-flex!important;align-items:center;justify-content:center;min-height:42px;padding:9px 17px!important;border-radius:999px!important;background:linear-gradient(135deg,#009bb4,#35a9bf)!important;color:#fff!important;text-decoration:none!important;font-weight:600;box-shadow:0 5px 16px rgba(0,155,180,.18)}
+          .langbox,.langmenu,#langMenuContent,#currentLangText{display:none!important}
+          footer{margin-top:50px!important;padding:44px 18px 28px!important;background:linear-gradient(180deg,#075b89 0%,#005082 100%)!important;color:#fff!important;border-top:4px solid #009bb4;box-shadow:0 -10px 30px rgba(0,80,130,.10);text-align:center!important}
+          .ev-footer-inner{max-width:900px;margin:0 auto}
+          .ev-footer-logo{display:block!important;width:245px!important;height:auto!important;max-width:72vw!important;margin:0 auto 20px!important;filter:brightness(0) invert(1)!important;object-fit:contain}
+          .ev-footer-copy{max-width:760px;margin:0 auto 17px!important;padding-top:17px;border-top:1px solid rgba(255,255,255,.22);font-size:13px!important;line-height:1.7;opacity:.94}
+          .ev-contact-footer{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:10px!important;max-width:760px;margin:0 auto!important;padding:0 6px}
+          .ev-contact-footer a{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:42px;padding:9px 16px!important;border:1px solid rgba(255,255,255,.25)!important;border-radius:999px!important;color:#fff!important;background:rgba(255,255,255,.09)!important;text-decoration:none!important;font-size:14px!important;line-height:1.25;box-shadow:0 4px 14px rgba(0,0,0,.08);transition:transform .2s ease,background .2s ease}
+          .ev-contact-footer a:hover{background:rgba(255,255,255,.16)!important;transform:translateY(-1px)}
+          .ev-contact-footer i{font-size:16px;width:18px;text-align:center}
+          @media screen and (max-width:700px){
+            header{min-height:64px;padding:8px 16px!important}
+            header img{width:165px!important;max-width:55vw!important}
+            .back{min-height:38px;padding:8px 14px!important;font-size:14px!important}
+            footer{margin-top:40px!important;padding:35px 14px 24px!important}
+            .ev-footer-logo{width:215px!important;max-width:70vw!important;margin-bottom:18px!important}
+            .ev-footer-copy{font-size:12px!important;padding-top:15px}
+            .ev-contact-footer{gap:8px!important}
+            .ev-contact-footer a{min-height:38px;padding:8px 12px!important;font-size:12.5px!important}
+          }
+          </style>'''
 
           footer = '''<footer>
-  <div class="ev-footer-inner">
-    <a href="https://drerolvural.com.tr/" aria-label="Doç. Dr. Erol Vural ana sayfa">
-      <img class="ev-footer-logo" alt="Doç. Dr. Erol Vural | Metabolik ve Bariatrik Cerrahi" src="https://drerolvural.com.tr/logo2.png" decoding="async" loading="lazy">
-    </a>
-    <p class="ev-footer-copy">© 2026 Doç. Dr. Erol VURAL | Metabolik ve Bariatrik Cerrahi. Tüm hakları saklıdır.</p>
-    <div class="ev-contact-footer" aria-label="İletişim ve Instagram">
-      <a href="tel:+905414569367" aria-label="Telefon: +90 541 456 93 67">
-        <i class="fas fa-phone phone-icon" aria-hidden="true"></i>
-        <span>+90 541 456 93 67</span>
-      </a>
-      <a href="https://www.instagram.com/tupmidedoktoru/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @tupmidedoktoru">
-        <i class="fab fa-instagram instagram-icon" aria-hidden="true"></i>
-        <span>@tupmidedoktoru</span>
-      </a>
-    </div>
-  </div>
-</footer>'''
+            <div class="ev-footer-inner">
+              <a href="https://drerolvural.com.tr/" aria-label="Doç. Dr. Erol Vural ana sayfa">
+                <img class="ev-footer-logo" alt="Doç. Dr. Erol Vural | Metabolik ve Bariatrik Cerrahi" src="https://drerolvural.com.tr/logo2.png" decoding="async" loading="lazy">
+              </a>
+              <p class="ev-footer-copy">© 2026 Doç. Dr. Erol VURAL | Metabolik ve Bariatrik Cerrahi. Tüm hakları saklıdır.</p>
+              <div class="ev-contact-footer" aria-label="İletişim ve Instagram">
+                <a href="tel:+905414569367" aria-label="Telefon: +90 541 456 93 67"><i class="fas fa-phone" aria-hidden="true"></i><span>+90 541 456 93 67</span></a>
+                <a href="https://www.instagram.com/tupmidedoktoru/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @tupmidedoktoru"><i class="fab fa-instagram" aria-hidden="true"></i><span>@tupmidedoktoru</span></a>
+              </div>
+            </div>
+          </footer>'''
 
-          changed = 0
-          removed_lang = 0
-          standardized_footer = 0
+          changed=0
+          lang_removed=0
 
           for p in files:
-              s = p.read_text(encoding='utf-8', errors='ignore')
-              original = s
+              s=p.read_text(encoding='utf-8',errors='ignore')
+              original=s
 
-              # Ensure Font Awesome is available for the contact icons.
               if 'cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' not in s:
-                  s = s.replace('</head>', fa_link + '</head>', 1)
+                  s=s.replace('</head>',fa_link+'</head>',1)
 
-              # Remove the Turkish-only language selector everywhere.
-              before = s
-              s = re.sub(r'<div\s+class="langbox"\b.*?</div>\s*</div>', '', s, count=1, flags=re.I|re.S)
-              # Fallback for variants where the outer tools div is not captured cleanly.
-              s = re.sub(r'<div\s+class="langbox"\b.*?</div>', '', s, count=1, flags=re.I|re.S)
-              if s != before:
-                  removed_lang += 1
+              before=s
+              s=re.sub(r'<div\s+class="langbox"\b.*?</div>', '', s, count=1, flags=re.I|re.S)
+              s=re.sub(r'<button[^>]*class="lang"[^>]*>.*?</button>', '', s, count=1, flags=re.I|re.S)
+              s=re.sub(r'<div[^>]*id="langMenuContent"[^>]*>.*?</div>', '', s, count=1, flags=re.I|re.S)
+              if s!=before:
+                  lang_removed+=1
 
-              # Remove any leftover language menu/button fragments.
-              s = re.sub(r'<button[^>]*class="lang"[^>]*>.*?</button>', '', s, count=1, flags=re.I|re.S)
-              s = re.sub(r'<div[^>]*id="langMenuContent"[^>]*>.*?</div>', '', s, count=1, flags=re.I|re.S)
+              s=re.sub(r'<footer\b[^>]*>.*?</footer>', footer, s, count=1, flags=re.I|re.S)
+              if '<footer' not in original.lower():
+                  s=s.replace('</body>',footer+'</body>',1)
 
-              # Replace every footer with one identical, responsive footer.
-              if re.search(r'<footer\b[^>]*>.*?</footer>', s, flags=re.I|re.S):
-                  s = re.sub(r'<footer\b[^>]*>.*?</footer>', footer, s, count=1, flags=re.I|re.S)
-              else:
-                  s = re.sub(r'</body>', footer + '</body>', s, count=1, flags=re.I)
-              standardized_footer += 1
+              s=re.sub(r'<style\s+id="ev-global-ui-v2">.*?</style>', '', s, flags=re.I|re.S)
+              s=s.replace('</head>',css+'</head>',1)
 
-              # Add the global CSS just before </head>, replacing older generated UI CSS blocks if present.
-              s = re.sub(r'<style\s+id="ev-global-ui-v2">.*?</style>', '', s, flags=re.I|re.S)
-              s = s.replace('</head>', css + '</head>', 1)
+              if s!=original:
+                  p.write_text(s,encoding='utf-8')
+                  changed+=1
 
-              if s != original:
-                  p.write_text(s, encoding='utf-8')
-                  changed += 1
-
-          print(f"HTML files scanned: {len(files)}")
-          print(f"HTML files changed: {changed}")
-          print(f"Pages with language selector removed/normalized: {removed_lang}")
-          print(f"Footers standardized: {standardized_footer}")
+          print('HTML files scanned:',len(files))
+          print('HTML files changed:',changed)
+          print('Pages with Turkish language selector removed:',lang_removed)
+          PY
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add '*.html' .github/workflows/global-ui-v2.yml
+          git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
@@ -253,8 +116,6 @@ footer{
           git rm -f .github/workflows/global-ui-v2.yml || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --cached --quiet; then
-            exit 0
-          fi
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m "Remove one-time UI polish workflow"
           git push
