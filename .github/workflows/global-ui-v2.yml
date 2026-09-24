@@ -108,14 +108,17 @@ jobs:
             exit 0
           fi
           git commit -m "Standardize Turkish header footer and contact icons"
+          git pull --rebase origin main
           git push
 
       - name: Remove one-time workflow
         if: always()
         run: |
-          git rm -f .github/workflows/global-ui-v2.yml || true
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Remove one-time UI polish workflow"
-          git push
+          if [ -f .github/workflows/global-ui-v2.yml ]; then
+            git rm -f .github/workflows/global-ui-v2.yml
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Remove one-time UI polish workflow"
+            git pull --rebase origin main
+            git push
+          fi
