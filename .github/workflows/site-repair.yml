@@ -109,7 +109,6 @@ jobs:
                   viewport_added += 1
 
               def repl(m):
-                  nonlocal href_repairs
                   url = m.group("url")
                   parts = urlsplit(url)
                   if parts.scheme or parts.netloc or url.startswith("#"):
