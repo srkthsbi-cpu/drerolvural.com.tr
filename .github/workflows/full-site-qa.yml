@@ -153,6 +153,10 @@ jobs:
               s=p.read_text(encoding='utf-8',errors='ignore')
               orig=s
 
+              # Normalize the mobile menu marker IDs: style and script must have unique IDs.
+              s=re.sub(r'<style\s+id="ev-mobile-menu-v3">', '<style id="ev-mobile-menu-v3-style">', s, flags=re.I)
+              s=re.sub(r'<script\s+id="ev-mobile-menu-v3">', '<script id="ev-mobile-menu-v3-script">', s, flags=re.I)
+
               # Remove accidental placeholder hero/content paragraphs.
               n=re.sub(r'<p>\s*e\s*</p>', '', s, flags=re.I)
               if n!=s:
@@ -173,7 +177,7 @@ jobs:
               s=re.sub(r'<button([^>]*class=["\'][^"\']*mobile-nav-toggle[^"\']*["\'][^>]*)>',
                        lambda m: '<button'+re.sub(r'\saria-expanded=["\'][^"\']*["\']','',re.sub(r'\saria-controls=["\'][^"\']*["\']','',re.sub(r'\saria-label=["\'][^"\']*["\']','',m.group(1))) )+' aria-expanded="false" aria-controls="primary-navigation" aria-label="Menüyü aç">', s, flags=re.I)
 
-              if has_nav and 'ev-mobile-menu-v3' not in s:
+              if has_nav and 'ev-mobile-menu-v3-style' not in s:
                   s=s.replace('</head>', MOBILE_CSS+'\n'+MOBILE_JS+'\n</head>',1)
                   menu_fixed+=1
 
