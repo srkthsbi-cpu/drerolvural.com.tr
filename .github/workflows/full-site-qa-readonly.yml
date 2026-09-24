@@ -1,0 +1,81 @@
+name: Full site QA (read-only)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'data/**'
+      - 'site.js'
+      - 'blog.js'
+      - 'post.js'
+      - '.github/workflows/full-site-qa-readonly.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Static site QA
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import re, sys
+
+          files=sorted(Path('.').rglob('*.html'))
+          files=[p for p in files if '.git' not in p.parts]
+          local=set(p.as_posix() for p in files)
+          issues=[]
+          e_pages=[]
+          duplicate_id_pages=[]
+          meta_issues=[]
+          menu_issues=[]
+
+          class P(HTMLParser):
+              def __init__(self): super().__init__(); self.ids=[]; self.links=[]; self.title=False; self.viewport=False; self.canonical=False
+              def handle_starttag(self,tag,attrs):
+                  a=dict(attrs)
+                  if 'id' in a: self.ids.append(a['id'])
+                  if tag=='a' and a.get('href'): self.links.append(a['href'])
+                  if tag=='title': self.title=True
+                  if tag=='meta' and a.get('name','').lower()=='viewport': self.viewport=True
+                  if tag=='link' and a.get('rel')=='canonical': self.canonical=True
+
+          for p in files:
+              text=p.read_text(encoding='utf-8',errors='ignore')
+              if re.search(r'<p[^>]*>\s*e\s*</p>',text,re.I): e_pages.append(p.as_posix())
+              parser=P(); parser.feed(text)
+              dups={x for x in parser.ids if parser.ids.count(x)>1}
+              if dups: duplicate_id_pages.append((p.as_posix(),sorted(dups)))
+              if not parser.title or not parser.viewport or not parser.canonical: meta_issues.append(p.as_posix())
+              if 'mobile-nav-toggle' in text and 'ev-mobile-menu-v3-script' not in text and 'site.js' not in text: menu_issues.append(p.as_posix())
+              base=p.parent
+              for href in parser.links:
+                  if href.startswith(('http://','https://','mailto:','tel:','#','javascript:')): continue
+                  target=href.split('#')[0].split('?')[0]
+                  if not target: continue
+                  dest=(base/target).resolve()
+                  try: rel=dest.relative_to(Path('.').resolve()).as_posix()
+                  except ValueError: continue
+                  if not dest.exists() and rel not in local: issues.append((p.as_posix(),href))
+
+          report=['FULL SITE QA (READ-ONLY)','========================',f'HTML pages scanned: {len(files)}',f'Broken local links: {len(issues)}',f'Duplicate ID pages: {len(duplicate_id_pages)}',f'Missing title/viewport/canonical: {len(meta_issues)}',f'Standalone e pages: {len(e_pages)}',f'Potential mobile-menu wiring issues: {len(menu_issues)}','']
+          report += ['BROKEN LINKS:']+[f'{a} -> {b}' for a,b in issues]+['','DUPLICATE IDS:']+[f'{a}: {b}' for a,b in duplicate_id_pages]+['','MISSING CORE META:']+meta_issues+['','STANDALONE E:']+e_pages+['','MOBILE MENU:']+menu_issues
+          Path('SITE-FULL-QA-REPORT.txt').write_text('\n'.join(report),encoding='utf-8')
+          print('\n'.join(report))
+          if issues or duplicate_id_pages or meta_issues or e_pages or menu_issues:
+              sys.exit(1)
+          PY
+      - name: Upload QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-full-qa-report
+          path: SITE-FULL-QA-REPORT.txt
