@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: content-index-main
+  cancel-in-progress: true
+
 jobs:
   index:
     runs-on: ubuntu-latest
@@ -102,4 +106,5 @@ jobs:
           git add data/content-index.json
           git diff --cached --quiet && exit 0
           git commit -m "Update site content index"
+          git pull --rebase origin main
           git push
