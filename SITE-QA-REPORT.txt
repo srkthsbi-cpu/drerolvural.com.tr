@@ -2625,3 +2625,11 @@ UNRESOLVED INTERNAL LINKS
 
 The repair intentionally did not rewrite article text or SEO metadata.
 It normalized the mobile viewport, added a site-wide mobile CSS safeguard, and replaced internal links that pointed at known legacy redirect targets.
+
+
+FOLLOW-UP LINK REPAIR
+============================================================
+Pages modified in follow-up: 863
+Stale internal-link references repaired: 2614
+Unresolved internal links after follow-up: 0
+RESULT: No unresolved relative/internal links remain in the scanned HTML.
