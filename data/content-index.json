@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T06:03:48.317962+00:00",
-  "page_count": 1024,
+  "generated_at": "2026-09-24T06:04:18.240144+00:00",
+  "page_count": 1025,
   "entries": [
     {
       "url": "/bilgi-merkezi-yaklasimi.html",
@@ -3464,6 +3464,24 @@
         "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/types"
       ],
       "content_hash": "a3a292d3b8fe2d3e2c21129cdcc18966c18300f32e5b0588e2c7ee6ca7391f70"
+    },
+    {
+      "url": "/blog/bariatrik-cerrahi-sonrasi-nsaid-agri-kesici-kullanimi.html",
+      "title": "Bariatrik Cerrahi Sonrası Ağrı Kesici Kullanımı: NSAİİ İlaçlar Güvenli mi? | Doç. Dr. Erol Vural",
+      "h1": "Bariatrik Cerrahi Sonrası Ağrı Kesici Kullanımı: NSAİİ İlaçlar Güvenli mi?",
+      "meta_description": "Bariatrik cerrahi sonrası ibuprofen, naproksen ve benzeri NSAİİ ağrı kesiciler kullanılabilir mi? Gastrik bypass ve tüp mide arasındaki farkları, ülser riskini, alternatifleri ve hangi belirtilerde değerlendirme gerektiğini açıklayan rehber.",
+      "canonical": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-nsaid-agri-kesici-kullanimi.html",
+      "word_count": 1205,
+      "headings": [],
+      "has_faq": true,
+      "external_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/27173818/",
+        "https://pubmed.ncbi.nlm.nih.gov/32424625/",
+        "https://pubmed.ncbi.nlm.nih.gov/33353863/",
+        "https://pubmed.ncbi.nlm.nih.gov/35595650/",
+        "https://www.instagram.com/tupmidedoktoru/"
+      ],
+      "content_hash": "4c6cac34bde5258c4129f7d79676cd0ea7730af8328d0731a8249d8a24267122"
     },
     {
       "url": "/blog/bariatrik-cerrahi-sonrasi-ogun-sikligi.html",
