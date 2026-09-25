@@ -185,6 +185,92 @@
       ],
       "date": "2026-09-25",
       "content_hash": "c66f1730b89895ccb09e2f380581a4a8e99841c2"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-tiamin-b1-eksikligi.html",
+      "title": "Bariatrik Cerrahi Sonrası Tiamin (B1 Vitamini) Eksikliği: Belirtiler ve Riskler",
+      "primary_keyword": "bariatrik cerrahi sonrası tiamin eksikliği",
+      "secondary_keywords": [
+        "B1 vitamini eksikliği bariatrik cerrahi",
+        "Wernicke ensefalopatisi",
+        "bariatrik cerrahi kusma",
+        "tiamin belirtileri"
+      ],
+      "covered_questions": [
+        "Tiamin neden önemlidir?",
+        "Hangi durumlarda risk artar?",
+        "Hangi nörolojik belirtiler önemlidir?",
+        "Tanıda neden gecikilmemelidir?",
+        "Takviye nasıl değerlendirilir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42557049/",
+        "https://pubmed.ncbi.nlm.nih.gov/37990718/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-b12-takibi.html",
+        "bariatrik-cerrahi-sonrasi-demir-eksikligi.html",
+        "ameliyat-sonrasi-bulantiyi-azaltan-beslenme-yaklasimi.html"
+      ],
+      "date": "2026-09-25",
+      "content_hash": "c834f880fd9eca7497ca625a91c76d4aeb358548"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-safra-tasi-riski.html",
+      "title": "Bariatrik Cerrahi Sonrası Safra Taşı Riski: Neden Artabilir ve Ne Zaman Değerlendirilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası safra taşı riski",
+      "secondary_keywords": [
+        "gastrik bypass safra taşı",
+        "tüp mide safra taşı",
+        "hızlı kilo kaybı safra taşı",
+        "safra kesesi belirtileri"
+      ],
+      "covered_questions": [
+        "Safra taşı neden gündeme gelir?",
+        "Belirtiler nelerdir?",
+        "Hangi belirtiler acildir?",
+        "Ameliyat öncesi safra kesesi değerlendirilir mi?",
+        "Koruyucu ilaç kullanılır mı?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/20440847/",
+        "https://pubmed.ncbi.nlm.nih.gov/37990718/"
+      ],
+      "related_articles": [
+        "ameliyat-oncesi-safra-kesesi-degerlendirmesi.html",
+        "bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
+        "bariatrik-cerrahi-sonrasi-acil-degerlendirme-gerektirebilecek-belirtiler.html"
+      ],
+      "date": "2026-09-25",
+      "content_hash": "f70309ae2e4e336d3087efb560cc5ceb51a46ce3"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-kilo-geri-alimi-ne-zaman-degerlendirilir.html",
+      "title": "Bariatrik Cerrahi Sonrası Kilo Geri Alımı Ne Zaman Değerlendirilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası kilo geri alımı",
+      "secondary_keywords": [
+        "bariatrik cerrahi kilo geri alımı",
+        "suboptimal yanıt",
+        "%TWL",
+        "bariatrik cerrahi sonrası kilo takibi"
+      ],
+      "covered_questions": [
+        "Kilo kaybı neden yavaşlar?",
+        "Kilo geri alımı nasıl tanımlanır?",
+        "Hangi ölçümler takip edilir?",
+        "Olası nedenler nelerdir?",
+        "Ne zaman yeniden değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/41963214/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-kas-kutlesinin-korunmasi.html",
+        "ameliyat-sonrasi-protein-onceligi.html",
+        "bariatrik-cerrahi-sonrasi-atistirma-davranisi.html"
+      ],
+      "date": "2026-09-25",
+      "content_hash": "bf10dd608bb723eb54f36b5967baec1c5b849465"
     }
   ]
 }
