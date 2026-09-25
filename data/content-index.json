@@ -1,15 +1,35 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-24",
+  "last_updated": "2026-09-25",
   "entries": [
     {
       "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
       "title": "Bariatrik Cerrahi Sonrası Böbrek Taşı Riski: Nedenleri ve Korunma Yolları",
       "primary_keyword": "bariatrik cerrahi sonrası böbrek taşı riski",
-      "secondary_keywords": ["bariatrik cerrahi böbrek taşı", "gastrik bypass böbrek taşı", "hiperoksalüri", "kalsiyum oksalat taşı", "bariatrik cerrahi sıvı tüketimi"],
-      "covered_questions": ["Bariatrik cerrahi böbrek taşı riskini neden etkileyebilir?", "Gastrik bypass ile tüp mide arasında risk farklı mıdır?", "Oksalat neden önemlidir?", "Sıvı ve kalsiyum yönetimi neden önemlidir?", "Hangi belirtilerde değerlendirme gerekir?"],
-      "sources": ["https://pubmed.ncbi.nlm.nih.gov/27396545/", "https://pubmed.ncbi.nlm.nih.gov/32429374/", "https://pubmed.ncbi.nlm.nih.gov/39632988/"],
-      "related_articles": ["bariatrik-cerrahi-sonrasi-kalsiyum.html", "bariatrik-cerrahi-sonrasi-d-vitamini.html", "sivi-tuketimi-bariatrik-cerrahi-sonrasi.html"],
+      "secondary_keywords": [
+        "bariatrik cerrahi böbrek taşı",
+        "gastrik bypass böbrek taşı",
+        "hiperoksalüri",
+        "kalsiyum oksalat taşı",
+        "bariatrik cerrahi sıvı tüketimi"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi böbrek taşı riskini neden etkileyebilir?",
+        "Gastrik bypass ile tüp mide arasında risk farklı mıdır?",
+        "Oksalat neden önemlidir?",
+        "Sıvı ve kalsiyum yönetimi neden önemlidir?",
+        "Hangi belirtilerde değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/27396545/",
+        "https://pubmed.ncbi.nlm.nih.gov/32429374/",
+        "https://pubmed.ncbi.nlm.nih.gov/39632988/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-kalsiyum.html",
+        "bariatrik-cerrahi-sonrasi-d-vitamini.html",
+        "sivi-tuketimi-bariatrik-cerrahi-sonrasi.html"
+      ],
       "date": "2026-09-24",
       "content_hash": "f6508d8a8a18a2ad0587dc940eca6de2528dc1e0"
     },
@@ -17,10 +37,30 @@
       "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-ilac-emilimi.html",
       "title": "Bariatrik Cerrahi Sonrası İlaç Emilimi Nasıl Değişir?",
       "primary_keyword": "bariatrik cerrahi sonrası ilaç emilimi",
-      "secondary_keywords": ["bariatrik cerrahi ilaç emilimi", "gastrik bypass ilaçlar", "tüp mide ilaç kullanımı", "ilaç farmakokinetiği", "bariatrik cerrahi ilaç takibi"],
-      "covered_questions": ["Bariatrik cerrahi ilaç emilimini neden değiştirebilir?", "Tüp mide ve gastrik bypass arasında fark var mı?", "Hangi ilaçlarda daha dikkatli olunmalıdır?", "İlaç formu önemli midir?", "Ameliyat sonrası ilaç takibi nasıl yapılır?"],
-      "sources": ["https://pubmed.ncbi.nlm.nih.gov/38710656/", "https://pubmed.ncbi.nlm.nih.gov/39887310/", "https://pubmed.ncbi.nlm.nih.gov/37857987/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9291886/"],
-      "related_articles": ["ameliyat-oncesi-ilaclarin-degerlendirilmesi.html", "obezite-ilaclari-ve-bariatrik-cerrahi.html"],
+      "secondary_keywords": [
+        "bariatrik cerrahi ilaç emilimi",
+        "gastrik bypass ilaçlar",
+        "tüp mide ilaç kullanımı",
+        "ilaç farmakokinetiği",
+        "bariatrik cerrahi ilaç takibi"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi ilaç emilimini neden değiştirebilir?",
+        "Tüp mide ve gastrik bypass arasında fark var mı?",
+        "Hangi ilaçlarda daha dikkatli olunmalıdır?",
+        "İlaç formu önemli midir?",
+        "Ameliyat sonrası ilaç takibi nasıl yapılır?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/38710656/",
+        "https://pubmed.ncbi.nlm.nih.gov/39887310/",
+        "https://pubmed.ncbi.nlm.nih.gov/37857987/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9291886/"
+      ],
+      "related_articles": [
+        "ameliyat-oncesi-ilaclarin-degerlendirilmesi.html",
+        "obezite-ilaclari-ve-bariatrik-cerrahi.html"
+      ],
       "date": "2026-09-24",
       "content_hash": "428c212501bc55cb4e569845af0822dd34ff111e"
     },
@@ -28,12 +68,123 @@
       "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-nsaid-agri-kesici-kullanimi.html",
       "title": "Bariatrik Cerrahi Sonrası Ağrı Kesici Kullanımı: NSAİİ İlaçlar Güvenli mi?",
       "primary_keyword": "bariatrik cerrahi sonrası NSAİİ ağrı kesici kullanımı",
-      "secondary_keywords": ["bariatrik cerrahi ibuprofen", "gastrik bypass NSAİİ", "tüp mide NSAİİ", "marjinal ülser", "bariatrik cerrahi ağrı kesici"],
-      "covered_questions": ["NSAİİ ilaçlar nelerdir?", "Gastrik bypass sonrası neden daha fazla dikkat gerekir?", "Tüp mide sonrası durum farklı mıdır?", "NSAİİ kullanmak zorunda kalınırsa ne yapılır?", "Hangi belirtilerde acil değerlendirme gerekir?"],
-      "sources": ["https://pubmed.ncbi.nlm.nih.gov/35595650/", "https://pubmed.ncbi.nlm.nih.gov/33353863/", "https://pubmed.ncbi.nlm.nih.gov/27173818/", "https://pubmed.ncbi.nlm.nih.gov/32424625/"],
-      "related_articles": ["bariatrik-cerrahi-sonrasi-ilac-emilimi.html", "gastrik-bypass-nedir.html", "tup-mide-ameliyati-nedir.html"],
+      "secondary_keywords": [
+        "bariatrik cerrahi ibuprofen",
+        "gastrik bypass NSAİİ",
+        "tüp mide NSAİİ",
+        "marjinal ülser",
+        "bariatrik cerrahi ağrı kesici"
+      ],
+      "covered_questions": [
+        "NSAİİ ilaçlar nelerdir?",
+        "Gastrik bypass sonrası neden daha fazla dikkat gerekir?",
+        "Tüp mide sonrası durum farklı mıdır?",
+        "NSAİİ kullanmak zorunda kalınırsa ne yapılır?",
+        "Hangi belirtilerde acil değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/35595650/",
+        "https://pubmed.ncbi.nlm.nih.gov/33353863/",
+        "https://pubmed.ncbi.nlm.nih.gov/27173818/",
+        "https://pubmed.ncbi.nlm.nih.gov/32424625/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-ilac-emilimi.html",
+        "gastrik-bypass-nedir.html",
+        "tup-mide-ameliyati-nedir.html"
+      ],
       "date": "2026-09-24",
       "content_hash": "a34dabe1d82cc84afa6c12e604b70dc19c20e3bb"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-dumping-sendromu.html",
+      "title": "Bariatrik Cerrahi Sonrası Dumping Sendromu Nedir? Belirtileri ve Beslenme Yaklaşımı",
+      "primary_keyword": "bariatrik cerrahi sonrası dumping sendromu",
+      "secondary_keywords": [
+        "dumping sendromu belirtileri",
+        "erken dumping",
+        "geç dumping",
+        "bariatrik cerrahi hipoglisemi"
+      ],
+      "covered_questions": [
+        "Dumping sendromu neden olur?",
+        "Erken dumping belirtileri nelerdir?",
+        "Geç dumping ile hipoglisemi arasındaki fark nedir?",
+        "Beslenmede nelere dikkat edilir?",
+        "Hangi belirtilerde tıbbi değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/38451861/",
+        "https://pubmed.ncbi.nlm.nih.gov/28110984/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-hipoglisemi.html",
+        "ameliyat-sonrasi-beslenme-hatalari.html",
+        "ameliyat-sonrasi-sivi-ve-kati-gida-zamanlamasi.html"
+      ],
+      "date": "2026-09-25",
+      "content_hash": "4603594b1b46327be2967ce1b8793ad9d140fca2"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-demir-eksikligi.html",
+      "title": "Bariatrik Cerrahi Sonrası Demir Eksikliği: Belirtiler, Testler ve Takip",
+      "primary_keyword": "bariatrik cerrahi sonrası demir eksikliği",
+      "secondary_keywords": [
+        "bariatrik cerrahi demir eksikliği",
+        "ferritin",
+        "transferrin satürasyonu",
+        "gastrik bypass demir eksikliği"
+      ],
+      "covered_questions": [
+        "Demir eksikliği neden gelişir?",
+        "Tüp mide ve gastrik bypass arasında fark var mı?",
+        "Hangi belirtiler görülebilir?",
+        "Ferritin ve kan testleri nasıl değerlendirilir?",
+        "Kimlerde daha yakın takip gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/39277530/",
+        "https://pubmed.ncbi.nlm.nih.gov/36701012/",
+        "https://asmbs.org/resources/integrated-health-nutritional-guidelines/"
+      ],
+      "related_articles": [
+        "ameliyat-sonrasi-hangi-kan-degerleri-takip-edilir.html",
+        "b12-eksikligi-belirtileri.html",
+        "bariatrik-cerrahi-sonrasi-ilac-emilimi.html"
+      ],
+      "date": "2026-09-25",
+      "content_hash": "8771d942117040ec76a9700bfa133bebac4b13c8"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-hipoglisemi.html",
+      "title": "Bariatrik Cerrahi Sonrası Hipoglisemi: Neden Olur, Nasıl Değerlendirilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası hipoglisemi",
+      "secondary_keywords": [
+        "post-bariatrik hipoglisemi",
+        "yemek sonrası hipoglisemi",
+        "gastrik bypass hipoglisemi",
+        "geç dumping"
+      ],
+      "covered_questions": [
+        "Post-bariatrik hipoglisemi nedir?",
+        "Neden gelişebilir?",
+        "Belirtileri nelerdir?",
+        "Tanı nasıl değerlendirilir?",
+        "Beslenme ve tedavi yaklaşımı nedir?",
+        "Hangi durumlarda acil yardım gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/38451861/",
+        "https://pubmed.ncbi.nlm.nih.gov/41126373/",
+        "https://pubmed.ncbi.nlm.nih.gov/42370943/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-dumping-sendromu.html",
+        "ameliyat-sonrasi-beslenme-hatalari.html",
+        "ameliyat-sonrasi-hangi-kan-degerleri-takip-edilir.html"
+      ],
+      "date": "2026-09-25",
+      "content_hash": "c66f1730b89895ccb09e2f380581a4a8e99841c2"
     }
   ]
 }
