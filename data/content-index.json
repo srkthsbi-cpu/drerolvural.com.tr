@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-25",
+  "last_updated": "2026-09-26",
   "entries": [
     {
       "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
@@ -271,6 +271,97 @@
       ],
       "date": "2026-09-25",
       "content_hash": "bf10dd608bb723eb54f36b5967baec1c5b849465"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-gebelikte-mikrobesin-eksiklikleri.html",
+      "title": "Bariatrik Cerrahi Sonrası Gebelikte Mikrobesin Eksiklikleri: Hangi Değerler Yakından İzlenir?",
+      "primary_keyword": "bariatrik cerrahi sonrası gebelikte mikrobesin eksiklikleri",
+      "secondary_keywords": [
+        "gebelikte vitamin eksikliği",
+        "bariatrik cerrahi gebelik beslenmesi",
+        "demir B12 folat gebelik",
+        "mikrobesin takibi"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi sonrası gebelikte neden mikrobesin takibi gerekir?",
+        "Hangi vitamin ve mineraller daha yakından izlenir?",
+        "Demir ve B12 neden önemlidir?",
+        "Takviyeler gebelikte nasıl değerlendirilir?",
+        "Hangi belirtilerde daha erken değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/41882297/",
+        "https://pubmed.ncbi.nlm.nih.gov/42075092/",
+        "https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-emzirme.html",
+        "bariatrik-cerrahi-sonrasi-b12-takibi.html",
+        "bariatrik-cerrahi-sonrasi-demir-takibi.html"
+      ],
+      "date": "2026-09-26",
+      "content_hash": "939e07b06313d6ba09e8d42b84ab25f43743244c"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-gebelikte-kan-sekeri-takibi.html",
+      "title": "Bariatrik Cerrahi Sonrası Gebelikte Kan Şekeri Takibi: OGTT Neden Her Zaman Uygun Olmayabilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası gebelikte kan şekeri takibi",
+      "secondary_keywords": [
+        "bariatrik cerrahi gebelik diyabet taraması",
+        "OGTT bariatrik cerrahi",
+        "gestasyonel diyabet bariatrik cerrahi",
+        "gebelikte glukoz izlemi"
+      ],
+      "covered_questions": [
+        "OGTT neden bariatrik cerrahi sonrası farklı değerlendirilebilir?",
+        "Dumping ile hipoglisemi arasındaki fark nedir?",
+        "Alternatif glukoz izlem yöntemleri nelerdir?",
+        "Evde kan şekeri ölçümü nasıl değerlendirilir?",
+        "Hangi belirtilerde daha erken değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42075092/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6852078/",
+        "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2009/06/bariatric-surgery-and-pregnancy"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-hipoglisemi.html",
+        "bariatrik-cerrahi-sonrasi-dumping-sendromu.html",
+        "bariatrik-cerrahi-sonrasi-gebelikte-mikrobesin-eksiklikleri.html"
+      ],
+      "date": "2026-09-26",
+      "content_hash": "4505a45b9edeb973d0424b79978fed2b285c1dc5"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-emzirme-ve-beslenme.html",
+      "title": "Bariatrik Cerrahi Sonrası Emzirme ve Beslenme: Anne Sütü Döneminde Nelere Dikkat Edilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası emzirme ve beslenme",
+      "secondary_keywords": [
+        "tüp mide sonrası emzirme",
+        "gastrik bypass sonrası emzirme",
+        "emzirme döneminde vitamin takibi",
+        "bariatrik cerrahi beslenme"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi sonrası emzirmek mümkün müdür?",
+        "Emzirme döneminde hangi besinler ve mikrobesinler önemlidir?",
+        "Takviyeler doğumdan sonra bırakılır mı?",
+        "Hangi laboratuvarlar takip edilebilir?",
+        "Hızlı kilo kaybı ne zaman değerlendirilmelidir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42075092/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6852078/",
+        "https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-gebelikte-mikrobesin-eksiklikleri.html",
+        "bariatrik-cerrahi-sonrasi-emzirme.html",
+        "bariatrik-cerrahi-sonrasi-b12-takibi.html",
+        "bariatrik-cerrahi-sonrasi-demir-eksikligi.html"
+      ],
+      "date": "2026-09-26",
+      "content_hash": "554eddf5645309ea2161c1613eaa963a2a300f33"
     }
   ]
 }
