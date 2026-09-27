@@ -452,6 +452,90 @@
       ],
       "date": "2026-09-27",
       "content_hash": "2fac27006575c584589aa36baf5973a0f69987af"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/gastrik-bypass-sonrasi-internal-hernia.html",
+      "title": "Gastrik Bypass Sonrası Internal Herni: Karın Ağrısı Ne Zaman Önemlidir?",
+      "primary_keyword": "gastrik bypass sonrası internal herni",
+      "secondary_keywords": [
+        "internal herni belirtileri",
+        "gastrik bypass karın ağrısı",
+        "bağırsak tıkanıklığı"
+      ],
+      "covered_questions": [
+        "Internal herni nedir?",
+        "Gastrik bypass sonrası neden görülebilir?",
+        "Hangi belirtiler önemlidir?",
+        "Tanı nasıl değerlendirilir?",
+        "Hangi durumlarda acil değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/40934112/",
+        "https://pubmed.ncbi.nlm.nih.gov/42140862/",
+        "https://pubmed.ncbi.nlm.nih.gov/40197535/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-acil-degerlendirme-gerektirebilecek-belirtiler.html",
+        "bariatrik-cerrahi-sonrasi-nsaid-agri-kesici-kullanimi.html"
+      ],
+      "date": "2026-09-27",
+      "content_hash": "3a9f10bdb3deaaa244ab51987f6f5eaf7fba9868"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/gastrik-bypass-sonrasi-marjinal-ulser.html",
+      "title": "Gastrik Bypass Sonrası Marjinal Ülser: Belirtiler, Riskler ve Değerlendirme",
+      "primary_keyword": "gastrik bypass sonrası marjinal ülser",
+      "secondary_keywords": [
+        "marjinal ülser belirtileri",
+        "bypass ülser",
+        "anastomoz ülseri"
+      ],
+      "covered_questions": [
+        "Marjinal ülser nedir?",
+        "Hangi risk faktörleri önemlidir?",
+        "Belirtileri nelerdir?",
+        "Tanı nasıl konur?",
+        "Hangi durumlarda acil değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42133218/",
+        "https://pubmed.ncbi.nlm.nih.gov/41644377/",
+        "https://pubmed.ncbi.nlm.nih.gov/37445371/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-nsaid-agri-kesici-kullanimi.html",
+        "bariatrik-cerrahi-sonrasi-ilac-emilimi.html"
+      ],
+      "date": "2026-09-27",
+      "content_hash": "1b46b78a471e640ab5d727233f0d472fa4f183cd"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-kas-kutlesi-ve-sarkopeni.html",
+      "title": "Bariatrik Cerrahi Sonrası Kas Kütlesi ve Sarkopeni: Kilo Kaybı Nasıl Değerlendirilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası kas kütlesi",
+      "secondary_keywords": [
+        "sarkopeni bariatrik cerrahi",
+        "kas kaybı",
+        "bariatrik cerrahi protein egzersiz"
+      ],
+      "covered_questions": [
+        "Kas kütlesi neden azalabilir?",
+        "Kas kaybı ile sarkopeni aynı şey mi?",
+        "Kas gücü nasıl değerlendirilir?",
+        "Protein neden önemlidir?",
+        "Egzersizin rolü nedir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42014968/",
+        "https://pubmed.ncbi.nlm.nih.gov/42113435/",
+        "https://pubmed.ncbi.nlm.nih.gov/42324178/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-kilo-geri-alimi-ne-zaman-degerlendirilir.html",
+        "bariatrik-cerrahi-sonrasi-gebelik-emzirme-kemik-sagligi.html"
+      ],
+      "date": "2026-09-27",
+      "content_hash": "a3aa4397a5196c47cec58be75342b75c4fb3d698"
     }
   ]
 }
