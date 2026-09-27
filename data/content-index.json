@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-26",
+  "last_updated": "2026-09-27",
   "entries": [
     {
       "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
@@ -362,6 +362,96 @@
       ],
       "date": "2026-09-26",
       "content_hash": "554eddf5645309ea2161c1613eaa963a2a300f33"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-gebelikte-kilo-alimi-takibi.html",
+      "title": "Bariatrik Cerrahi Sonrası Gebelikte Kilo Alımı: Hangi Noktalar İzlenir?",
+      "primary_keyword": "bariatrik cerrahi sonrası gebelikte kilo alımı",
+      "secondary_keywords": [
+        "gebelikte kilo alımı",
+        "bariatrik cerrahi gebelik beslenmesi",
+        "gebelik kilo takibi"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi sonrası gebelikte kilo alımı nasıl değerlendirilir?",
+        "Az kilo alımı ne zaman değerlendirilir?",
+        "Fazla kilo alımı neden ayrıca izlenir?",
+        "Protein ve enerji yeterliliği neden önemlidir?",
+        "Kilo takibi fetal büyümeyle nasıl birlikte ele alınır?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42075092/",
+        "https://pubmed.ncbi.nlm.nih.gov/31493139/",
+        "https://pubmed.ncbi.nlm.nih.gov/40544836/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-gebelikte-mikrobesin-eksiklikleri.html",
+        "bariatrik-cerrahi-sonrasi-gebelikte-kan-sekeri-takibi.html",
+        "bariatrik-cerrahi-sonrasi-emzirme-ve-beslenme.html"
+      ],
+      "date": "2026-09-27",
+      "content_hash": "ee5322de6eef0778a137f010ddd2b8f541b157b7"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-gebelikte-fetal-buyume-takibi.html",
+      "title": "Bariatrik Cerrahi Sonrası Gebelikte Bebeğin Büyümesi Nasıl Takip Edilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası gebelikte fetal büyüme",
+      "secondary_keywords": [
+        "gebelik sonrası bariatrik cerrahi",
+        "küçük gebelik haftasına göre bebek",
+        "fetal büyüme takibi"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi sonrası fetal büyüme neden izlenir?",
+        "Küçük gebelik haftasına göre bebek ne demektir?",
+        "Ultrason takipleri neyi değerlendirir?",
+        "Anne beslenmesi fetal büyümeyi nasıl ilgilendirir?",
+        "Takip sıklığı nasıl belirlenir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42075092/",
+        "https://pubmed.ncbi.nlm.nih.gov/37805294/",
+        "https://pubmed.ncbi.nlm.nih.gov/40210511/",
+        "https://pubmed.ncbi.nlm.nih.gov/40317763/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-gebelikte-kilo-alimi-takibi.html",
+        "bariatrik-cerrahi-sonrasi-gebelikte-mikrobesin-eksiklikleri.html",
+        "bariatrik-cerrahi-sonrasi-gebelikte-kan-sekeri-takibi.html"
+      ],
+      "date": "2026-09-27",
+      "content_hash": "4b663dec9e7ad1055ebbed8ca6f230830cfdc571"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-gebelik-emzirme-kemik-sagligi.html",
+      "title": "Bariatrik Cerrahi Sonrası Gebelik ve Emzirme Döneminde Kemik Sağlığı",
+      "primary_keyword": "bariatrik cerrahi gebelik kemik sağlığı",
+      "secondary_keywords": [
+        "bariatrik cerrahi emzirme osteoporoz",
+        "gebelik emzirme kemik sağlığı",
+        "kalsiyum D vitamini bariatrik cerrahi"
+      ],
+      "covered_questions": [
+        "Bariatrik cerrahi kemik metabolizmasını neden etkileyebilir?",
+        "Gebelik ve emzirme döneminde kemik sağlığı neden önemlidir?",
+        "Gebelik ve emzirme ilişkili osteoporoz nedir?",
+        "Hangi belirtiler değerlendirme gerektirir?",
+        "Kalsiyum ve D vitamini neden önemlidir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/41703971/",
+        "https://pubmed.ncbi.nlm.nih.gov/41848844/",
+        "https://pubmed.ncbi.nlm.nih.gov/42718481/",
+        "https://pubmed.ncbi.nlm.nih.gov/42075092/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-gebelikte-mikrobesin-eksiklikleri.html",
+        "bariatrik-cerrahi-sonrasi-emzirme-ve-beslenme.html",
+        "bariatrik-cerrahi-sonrasi-d-vitamini.html",
+        "tup-mide-ameliyati-sonrasi-kalsiyum.html"
+      ],
+      "date": "2026-09-27",
+      "content_hash": "2fac27006575c584589aa36baf5973a0f69987af"
     }
   ]
 }
