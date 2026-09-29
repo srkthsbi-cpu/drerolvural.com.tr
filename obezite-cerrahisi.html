@@ -395,29 +395,35 @@ document.addEventListener('DOMContentLoaded',function(){
   document.querySelectorAll('.ev-global-mobile-menu').forEach(function(btn){
     var nav=btn.parentElement.querySelector('.ev-global-mobile-nav');
     if(!nav) return;
+    var portal=document.createElement('div');
+    portal.className='ev-mobile-menu-portal';
+    portal.innerHTML=nav.innerHTML;
+    portal.setAttribute('aria-hidden','true');
+    document.body.appendChild(portal);
+    nav.remove();
+    function close(){
+      portal.classList.remove('open');
+      portal.setAttribute('aria-hidden','true');
+      btn.setAttribute('aria-expanded','false');
+      btn.setAttribute('aria-label','Menüyü aç');
+      btn.textContent='☰';
+    }
     btn.addEventListener('click',function(e){
-      e.stopPropagation();
-      var open=nav.classList.toggle('open');
+      e.preventDefault(); e.stopPropagation();
+      var open=portal.classList.toggle('open');
+      portal.setAttribute('aria-hidden',open?'false':'true');
       btn.setAttribute('aria-expanded',open?'true':'false');
       btn.setAttribute('aria-label',open?'Menüyü kapat':'Menüyü aç');
       btn.textContent=open?'×':'☰';
     });
-    nav.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click',function(){
-        nav.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-        btn.setAttribute('aria-label','Menüyü aç');
-        btn.textContent='☰';
-      });
+    portal.addEventListener('click',function(e){
+      var a=e.target.closest('a');
+      if(a) close();
     });
     document.addEventListener('click',function(e){
-      if(!nav.contains(e.target) && !btn.contains(e.target)){
-        nav.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-        btn.setAttribute('aria-label','Menüyü aç');
-        btn.textContent='☰';
-      }
+      if(!portal.contains(e.target) && !btn.contains(e.target)) close();
     });
+    window.addEventListener('resize',function(){ if(window.innerWidth>850) close(); });
   });
 });
 </script>
@@ -456,6 +462,53 @@ document.addEventListener('DOMContentLoaded',function(){
 @media(max-width:370px){
   header>.ev-global-mobile-nav,
   header>.ev-global-mobile-nav.open{top:62px!important;left:9px!important;right:9px!important;max-height:calc(100vh - 74px)!important}
+}
+</style><style id="ev-mobile-menu-portal-css">
+.ev-mobile-menu-portal{display:none!important}
+@media(max-width:850px){
+  .ev-mobile-menu-portal{
+    display:none!important;
+    position:fixed!important;
+    top:70px!important;
+    left:10px!important;
+    right:10px!important;
+    width:auto!important;
+    max-height:calc(100vh - 82px)!important;
+    overflow-y:auto!important;
+    padding:12px!important;
+    flex-direction:column!important;
+    gap:3px!important;
+    background:#fff!important;
+    border:1px solid #dcebf0!important;
+    border-radius:18px!important;
+    box-shadow:0 18px 45px rgba(0,0,0,.25)!important;
+    z-index:2147483647!important;
+    box-sizing:border-box!important;
+  }
+  .ev-mobile-menu-portal.open{display:flex!important}
+  .ev-mobile-menu-portal a{
+    display:block!important;
+    width:100%!important;
+    box-sizing:border-box!important;
+    padding:13px 14px!important;
+    color:#14577f!important;
+    background:#fff!important;
+    border-radius:11px!important;
+    text-decoration:none!important;
+    font-weight:600!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  .ev-mobile-menu-portal a:hover{background:#f1f9fb!important}
+  .ev-mobile-menu-portal .cta{
+    margin-top:5px!important;
+    text-align:center!important;
+    background:#35a7bf!important;
+    color:#fff!important;
+  }
+}
+@media(max-width:370px){
+  .ev-mobile-menu-portal{top:62px!important;left:8px!important;right:8px!important;max-height:calc(100vh - 74px)!important}
 }
 </style></head><body><header><a aria-label="Doç. Dr. Erol Vural" class="logo" href="index.html"><img alt="Doç. Dr. Erol Vural" src="logo1.png" decoding="async" fetchpriority="high"/></a><nav class="nav" id="primary-navigation">
         <a href="index.html">Anasayfa</a>
