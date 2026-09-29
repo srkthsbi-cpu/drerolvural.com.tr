@@ -1,0 +1,105 @@
+name: Audit hamburger menus sitewide
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-hamburger-menus.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit every HTML page
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          from collections import Counter, defaultdict
+
+          htmls=sorted(Path('.').rglob('*.html'))
+          htmls=[p for p in htmls if '.git' not in p.parts]
+          bad=[]
+          categories=Counter()
+          examples=defaultdict(list)
+
+          def add(p,cat):
+              categories[cat]+=1
+              if len(examples[cat])<40: examples[cat].append(str(p))
+
+          for p in htmls:
+              t=p.read_text(encoding='utf-8',errors='replace')
+              # Only inspect the unified v4 mobile menu.
+              buttons=re.findall(r'<button[^>]*class=["\'][^"\']*ev-global-mobile-menu[^"\']*["\'][^>]*>',t,re.I)
+              navs=re.findall(r'<nav[^>]*class=["\'][^"\']*ev-global-mobile-nav[^"\']*["\'][^>]*>',t,re.I)
+              scripts=re.findall(r'<script[^>]*id=["\']ev-mobile-header-v4-script["\'][^>]*>(.*?)</script>',t,re.I|re.S)
+              styles='ev-mobile-header-v4' in t
+              issues=[]
+              if len(buttons)==0: issues.append('NO_BUTTON')
+              elif len(buttons)>1: issues.append('DUPLICATE_BUTTON')
+              if len(navs)==0: issues.append('NO_NAV')
+              elif len(navs)>1: issues.append('DUPLICATE_NAV')
+              if len(scripts)==0: issues.append('NO_SCRIPT')
+              elif len(scripts)>1: issues.append('DUPLICATE_SCRIPT')
+              if not styles: issues.append('NO_V4_STYLE')
+              if buttons and navs:
+                  # Require button/nav to share a header.
+                  hs=re.findall(r'<header\b[\s\S]*?</header>',t,re.I)
+                  if not any('ev-global-mobile-menu' in h and 'ev-global-mobile-nav' in h for h in hs):
+                      issues.append('BUTTON_NAV_NOT_SAME_HEADER')
+              if scripts:
+                  s=scripts[0]
+                  for needle,cat in [
+                      ('.querySelectorAll(\'.ev-global-mobile-menu\')','SCRIPT_MISSING_BUTTON_SELECTOR'),
+                      ('.classList.toggle(\'open\')','SCRIPT_MISSING_TOGGLE'),
+                      ("btn.addEventListener('click'",'SCRIPT_MISSING_CLICK_HANDLER'),
+                      ("nav.classList.remove('open')",'SCRIPT_MISSING_CLOSE')
+                  ]:
+                      if needle not in s: issues.append(cat)
+              ids=re.findall(r'\bid=["\']([^"\']+)["\']',t,re.I)
+              dup=[k for k,v in Counter(ids).items() if v>1]
+              if dup: issues.append('DUPLICATE_IDS:'+','.join(dup[:5]))
+              if issues:
+                  for x in issues: add(p,x)
+                  bad.append((str(p),issues))
+
+          out=[]
+          out.append('HAMBURGER MENU SITEWIDE STATIC AUDIT')
+          out.append('===================================')
+          out.append(f'HTML pages scanned: {len(htmls)}')
+          out.append(f'Pages with static wiring issues: {len(bad)}')
+          out.append('')
+          if bad:
+              out.append('PAGE-BY-PAGE FINDINGS')
+              out.append('---------------------')
+              for p,issues in bad:
+                  out.append(f'{p} :: {" | ".join(issues)}')
+          else:
+              out.append('No static hamburger-menu wiring issues detected.')
+          out.append('')
+          out.append('ISSUE COUNTS')
+          out.append('------------')
+          for k,v in sorted(categories.items()):
+              out.append(f'{k}: {v}')
+              for e in examples[k][:10]: out.append(f'  - {e}')
+          out.append('')
+          out.append('LIMITATION')
+          out.append('----------')
+          out.append('This audit is static source analysis. It identifies missing/duplicate/inconsistent button, nav, CSS and click-handler wiring. It does not simulate a real iPhone tap or browser JavaScript runtime.')
+          Path('hamburger-menu-audit.txt').write_text('\n'.join(out)+'\n',encoding='utf-8')
+          print('\n'.join(out))
+          PY
+      - name: Commit audit report and remove workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hamburger-menu-audit.txt .github/workflows/audit-hamburger-menus.yml
+          git rm .github/workflows/audit-hamburger-menus.yml
+          git commit -m "Audit hamburger menu wiring sitewide"
+          git push origin main
