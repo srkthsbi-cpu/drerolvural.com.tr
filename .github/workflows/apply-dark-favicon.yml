@@ -1,0 +1,69 @@
+name: Apply dark navy favicon
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/apply-dark-favicon.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  favicon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace favicon references
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          changed=0
+          for p in Path('.').rglob('*.html'):
+            if '.git' in p.parts: continue
+            t=p.read_text(encoding='utf-8',errors='replace')
+            new=re.sub(
+              r'<link\s+rel="icon"\s+type="image/png"\s+sizes="96x96"\s+href="[^"]*favicon\.png"\s*/?>',
+              lambda m: '<link rel="icon" type="image/svg+xml" href="' + ('../' if len(p.parts)>1 else '') + 'favicon-dark.svg"/>',
+              t,
+              flags=re.I
+            )
+            if new!=t:
+              p.write_text(new,encoding='utf-8')
+              changed+=1
+          print("HTML pages with dark favicon:",changed)
+          if changed==0: raise SystemExit("No favicon references found")
+          PY
+      - name: Verify
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re,sys
+          files=list(Path('.').rglob('*.html'))
+          bad=[]
+          count=0
+          for p in files:
+            if '.git' in p.parts: continue
+            t=p.read_text(encoding='utf-8',errors='replace')
+            if 'rel="icon"' in t:
+              count+=1
+              if 'favicon-dark.svg' not in t:
+                bad.append(str(p))
+          print("HTML pages checked:",len(files))
+          print("Pages with icon:",count)
+          print("Bad favicon references:",len(bad))
+          if bad:
+            print('\n'.join(bad[:50]))
+            sys.exit(1)
+          PY
+      - name: Commit and remove one-time workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '*.html' .github/workflows/apply-dark-favicon.yml
+          git rm .github/workflows/apply-dark-favicon.yml
+          git commit -m "Use dark navy SVG favicon sitewide"
+          git push origin main
