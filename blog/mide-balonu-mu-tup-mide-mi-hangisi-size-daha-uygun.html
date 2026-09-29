@@ -426,7 +426,43 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 });
 </script>
-</head><body><header><a href="../index.html"><img alt="Doç. Dr. Erol Vural" src="../logo1.png" decoding="async" fetchpriority="high"/></a><div class="ev-top-actions" aria-label="Hızlı bağlantılar">
+<style id="ev-mobile-menu-visibility-fix">
+@media(max-width:850px){
+  header{position:relative!important;z-index:10000!important;overflow:visible!important}
+  header>.ev-global-mobile-nav,
+  header>.ev-global-mobile-nav.open{
+    position:fixed!important;
+    top:70px!important;
+    left:12px!important;
+    right:12px!important;
+    width:auto!important;
+    display:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+    z-index:2147483647!important;
+    background:#fff!important;
+    color:#14577f!important;
+    border:1px solid #dcebf0!important;
+    border-radius:18px!important;
+    box-shadow:0 14px 35px rgba(0,80,130,.22)!important;
+    max-height:calc(100vh - 84px)!important;
+    overflow:auto!important;
+  }
+  header>.ev-global-mobile-nav.open{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+  header>.ev-global-mobile-nav.open a{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+}
+@media(max-width:370px){
+  header>.ev-global-mobile-nav,
+  header>.ev-global-mobile-nav.open{top:62px!important;left:9px!important;right:9px!important;max-height:calc(100vh - 74px)!important}
+}
+</style></head><body><header><a href="../index.html"><img alt="Doç. Dr. Erol Vural" src="../logo1.png" decoding="async" fetchpriority="high"/></a><div class="ev-top-actions" aria-label="Hızlı bağlantılar">
     <a href="../index.html" aria-label="Ana sayfa" title="Ana sayfa"><i class="fas fa-house" aria-hidden="true"></i></a>
     <a href="../doktor-erol-vural.html" aria-label="Doktor Erol Vural" title="Doktor Erol Vural"><i class="fas fa-user-doctor" aria-hidden="true"></i></a>
     <a href="https://www.instagram.com/tupmidedoktoru/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
