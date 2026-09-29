@@ -1,0 +1,23 @@
+HAMBURGER MENU SITEWIDE STATIC AUDIT
+===================================
+HTML pages scanned: 1041
+Pages with static wiring issues: 1
+
+PAGE-BY-PAGE FINDINGS
+---------------------
+blog/gastrik-bypass-sonrasi-internal-herni.html :: NO_BUTTON | NO_NAV | NO_SCRIPT | NO_V4_STYLE
+
+ISSUE COUNTS
+------------
+NO_BUTTON: 1
+  - blog/gastrik-bypass-sonrasi-internal-herni.html
+NO_NAV: 1
+  - blog/gastrik-bypass-sonrasi-internal-herni.html
+NO_SCRIPT: 1
+  - blog/gastrik-bypass-sonrasi-internal-herni.html
+NO_V4_STYLE: 1
+  - blog/gastrik-bypass-sonrasi-internal-herni.html
+
+LIMITATION
+----------
+This audit is static source analysis. It identifies missing/duplicate/inconsistent button, nav, CSS and click-handler wiring. It does not simulate a real iPhone tap or browser JavaScript runtime.
