@@ -1,0 +1,33 @@
+name: Remove footer bullets
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix footer list styling
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          css='<style id="footer-bullet-cleanup">.ev-footer-v2-menu ul{list-style:none!important;margin:0!important;padding:0!important;display:contents!important}.ev-footer-v2-menu li{list-style:none!important;margin:0!important;padding:0!important}.ev-footer-v2-menu li::marker{content:none!important}</style>'
+          n=0
+          for p in Path('.').rglob('*.html'):
+            if '.git' in p.parts: continue
+            t=p.read_text(encoding='utf-8',errors='replace')
+            if 'ev-footer-v2-menu' in t and 'footer-bullet-cleanup' not in t:
+              t=t.replace('</head>',css+'</head>',1)
+              p.write_text(t,encoding='utf-8')
+              n+=1
+          print('Fixed pages:',n)
+          if n == 0: raise SystemExit('No footer pages found')
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '*.html'
+          git commit -m "Remove footer menu bullets"
+          git push origin main
