@@ -582,7 +582,26 @@ footer.ev-sitewide-footer{
   .ev-footer-v2-logo{width:175px!important}
   .ev-footer-v2-social a{font-size:10px!important;padding:7px 10px!important}
 }
-</style></head><body>
+</style><style id="footer-bullet-cleanup-v3">
+  .ev-footer-v2-menu,
+  .ev-footer-v2-menu ul,
+  .ev-footer-v2-menu li{
+    list-style:none!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .ev-footer-v2-menu::before,
+  .ev-footer-v2-menu::after,
+  .ev-footer-v2-menu li::before,
+  .ev-footer-v2-menu li::after,
+  .ev-footer-v2-menu li::marker{
+    content:none!important;
+    display:none!important;
+  }
+  .ev-footer-v2-menu a{
+    list-style:none!important;
+  }
+  </style></head><body>
 <header><a href="index.html" aria-label="Doç. Dr. Erol Vural"><img src="logo1.png" alt="Doç. Dr. Erol Vural" decoding="async" fetchpriority="high"></a><nav class="nav" id="primary-navigation">
         <a href="index.html">Anasayfa</a>
         <a href="doktor-erol-vural.html">Doktor Erol Vural</a>
@@ -613,7 +632,7 @@ footer.ev-sitewide-footer{
 <div class="notice"><strong>Tıbbi bilgilendirme:</strong> Bu sitedeki içerikler genel bilgilendirme amacı taşır. Tanı, muayene veya kişiye özel tedavi önerisinin yerine geçmez. Acil veya ciddi bir sağlık sorununuz varsa uygun sağlık hizmetine başvurun.</div>
 </main><script>(function(){const b=document.querySelector('.mobile-nav-toggle'),n=document.getElementById('primary-navigation');if(!b||!n)return;b.addEventListener('click',function(){const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.setAttribute('aria-label',o?'Menüyü aç':'Menüyü kapat');n.classList.toggle('is-open',!o)});n.addEventListener('click',function(e){if(e.target.closest('a')){b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Menüyü aç');n.classList.remove('is-open')}})})();</script><footer class="ev-sitewide-footer">
   <div class="ev-footer-v2-inner">
-    <nav class="ev-footer-v2-menu" aria-label="Site menüsü"><ul style="display:contents"><li><a href="index.html">Anasayfa</a></li><li><a href="doktor-erol-vural.html">Doktor Erol Vural</a></li><li><a href="tup-mide-ameliyati.html">Tüp Mide</a></li><li><a href="obezite-cerrahisi.html">Obezite Cerrahisi</a></li><li><a href="gastrik-bypass.html">Gastrik Bypass</a></li><li><a href="metabolik-cerrahi.html">Metabolik Cerrahi</a></li><li><a href="mide-balonu.html">Mide Balonu</a></li><li><a href="mide-botoksu.html">Mide Botoksu</a></li><li><a href="revizyon-cerrahisi.html">Revizyon Cerrahisi</a></li><li><a href="uzmanindan-bilgiler.html">Uzmanından Bilgiler</a></li><li><a href="bilgi-merkezi-yaklasimi.html">Bilgi Merkezi</a></li></ul></nav>
+    <nav class="ev-footer-v2-menu" aria-label="Site menüsü"><li><a href="index.html">Anasayfa</a></li><li><a href="doktor-erol-vural.html">Doktor Erol Vural</a></li><li><a href="tup-mide-ameliyati.html">Tüp Mide</a></li><li><a href="obezite-cerrahisi.html">Obezite Cerrahisi</a></li><li><a href="gastrik-bypass.html">Gastrik Bypass</a></li><li><a href="metabolik-cerrahi.html">Metabolik Cerrahi</a></li><li><a href="mide-balonu.html">Mide Balonu</a></li><li><a href="mide-botoksu.html">Mide Botoksu</a></li><li><a href="revizyon-cerrahisi.html">Revizyon Cerrahisi</a></li><li><a href="uzmanindan-bilgiler.html">Uzmanından Bilgiler</a></li><li><a href="bilgi-merkezi-yaklasimi.html">Bilgi Merkezi</a></li></nav>
     <a href="index.html" aria-label="Doç. Dr. Erol Vural ana sayfa">
       <img class="ev-footer-v2-logo" alt="Doç. Dr. Erol Vural | Metabolik ve Bariatrik Cerrahi" src="logo2.png" loading="lazy" decoding="async">
     </a>
