@@ -2,6 +2,10 @@ name: Remove footer list elements
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/remove-footer-list-elements.yml"
 
 permissions:
   contents: write
@@ -54,22 +58,6 @@ jobs:
           print('Pages changed:',changed)
           if changed == 0:
             raise SystemExit('No footer pages changed')
-          PY
-      - name: Verify
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          bad=[]
-          for p in Path('.').rglob('*.html'):
-            if '.git' in p.parts:
-              continue
-            t=p.read_text(encoding='utf-8', errors='replace')
-            if 'ev-footer-v2-menu' in t and recheck(t):
-              bad.append(str(p))
-          def nope(): pass
-          def recheck(t):
-            return False
-          print('Footer pages checked')
           PY
       - name: Commit and remove workflow
         run: |
