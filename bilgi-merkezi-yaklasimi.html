@@ -241,8 +241,83 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 });
 </script>
+
+<style id="ev-top-actions-v1">
+.ev-top-actions{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-left:auto;
+  flex:0 0 auto;
+}
+.ev-top-actions a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:44px!important;
+  height:44px!important;
+  min-width:44px!important;
+  min-height:44px!important;
+  padding:0!important;
+  border-radius:50%!important;
+  border:1px solid #d7e8ed!important;
+  background:#fff!important;
+  color:#14577f!important;
+  text-decoration:none!important;
+  box-shadow:0 4px 12px rgba(0,80,130,.10)!important;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease!important;
+}
+.ev-top-actions a i{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px!important;
+  line-height:1!important;
+}
+.ev-top-actions a:hover{
+  transform:translateY(-1px) scale(1.03);
+  background:#f2fafc!important;
+  box-shadow:0 7px 18px rgba(0,80,130,.15)!important;
+}
+.ev-top-actions .ev-top-whatsapp{
+  width:48px!important;
+  height:48px!important;
+  min-width:48px!important;
+  min-height:48px!important;
+  background:#35a7bf!important;
+  color:#fff!important;
+  border-color:#35a7bf!important;
+  box-shadow:0 6px 18px rgba(53,167,191,.28)!important;
+}
+.ev-top-actions .ev-top-whatsapp i{font-size:22px!important}
+@media(max-width:850px){
+  .ev-top-actions{display:flex!important}
+  header{gap:8px!important}
+  header .mobile-nav-toggle{width:44px!important;height:44px!important;min-width:44px!important;flex:0 0 44px}
+  header .mobile-nav-toggle + .nav + .ev-top-actions{margin-left:auto}
+}
+@media(max-width:430px){
+  .ev-top-actions{gap:5px}
+  .ev-top-actions a{width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important}
+  .ev-top-actions a i{font-size:18px!important}
+  .ev-top-actions .ev-top-whatsapp{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}
+  .ev-top-actions .ev-top-whatsapp i{font-size:20px!important}
+}
+@media(min-width:851px){
+  body[data-page="blog-post"] .ev-top-actions{display:flex!important}
+  body[data-page="blog-post"] header{gap:16px!important}
+}
+</style>
+
 </head><body>
-<header><a href="index.html" aria-label="Doç. Dr. Erol Vural"><img src="logo1.png" alt="Doç. Dr. Erol Vural" decoding="async" fetchpriority="high"></a><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menüyü aç">☰</button><nav class="nav" id="primary-navigation"><a href="index.html">Anasayfa</a><a href="doktor-erol-vural.html">Doktor Erol Vural</a><a href="uzmanindan-bilgiler.html">Uzmanından Bilgiler</a><a href="tup-mide-ameliyati.html">Tüp Mide</a><a href="obezite-cerrahisi.html">Obezite Cerrahisi</a></nav></header>
+<header><a href="index.html" aria-label="Doç. Dr. Erol Vural"><img src="logo1.png" alt="Doç. Dr. Erol Vural" decoding="async" fetchpriority="high"></a><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menüyü aç">☰</button><nav class="nav" id="primary-navigation"><a href="index.html">Anasayfa</a><a href="doktor-erol-vural.html">Doktor Erol Vural</a><a href="uzmanindan-bilgiler.html">Uzmanından Bilgiler</a><a href="tup-mide-ameliyati.html">Tüp Mide</a><a href="obezite-cerrahisi.html">Obezite Cerrahisi</a></nav><div class="ev-top-actions" aria-label="Hızlı bağlantılar">
+      <a href="index.html" aria-label="Ana sayfa" title="Ana sayfa"><i class="fas fa-house" aria-hidden="true"></i></a>
+      <a href="doktor-erol-vural.html" aria-label="Doktor Erol Vural" title="Doktor Erol Vural"><i class="fas fa-user-doctor" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/tupmidedoktoru/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a class="ev-top-whatsapp" href="https://wa.me/905414569367" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
+</header>
 <a class="skip-link" href="#main-content">İçeriğe geç</a><main id="main-content" class="wrap"><p class="crumb"><a href="index.html">Anasayfa</a> / Bilgi Merkezi Yaklaşımı</p><h1>Bilgi Merkezi Yaklaşımı</h1>
 <p>Bu sayfa, Doç. Dr. Erol Vural Bilgi Merkezi'ndeki hasta bilgilendirme içeriklerinin kim tarafından hazırlandığını, hangi amaçla yayınlandığını ve tıbbi bilgilerin nasıl ele alındığını açıklar.</p>
 <div class="box"><h2>Kim hazırlıyor?</h2><p>Site, Doç. Dr. Erol Vural ve onun metabolik ve bariatrik cerrahi alanındaki hasta bilgilendirme odağı etrafında yapılandırılmıştır. İçeriklerde doktorun doğrulanmamış akademik, mesleki veya klinik bilgileri eklenmez.</p><p><a href="doktor-erol-vural.html">Doç. Dr. Erol Vural hakkında bilgi</a></p></div>
