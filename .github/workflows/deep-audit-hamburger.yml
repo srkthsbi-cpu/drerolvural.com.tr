@@ -1,0 +1,65 @@
+name: Deep audit hamburger runtime wiring
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/deep-audit-hamburger.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deep static/runtime audit
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re, subprocess, tempfile
+          htmls=[p for p in Path('.').rglob('*.html') if '.git' not in p.parts]
+          findings=[]
+          for p in sorted(htmls):
+            t=p.read_text(encoding='utf-8',errors='replace')
+            if 'ev-global-mobile-menu' not in t: continue
+            issues=[]
+            scripts=re.findall(r'<script[^>]*id=["\']ev-mobile-header-v4-script["\'][^>]*>(.*?)</script>',t,re.I|re.S)
+            if scripts:
+              js=scripts[0]
+              q='''const document={querySelectorAll:()=>[]};\n'''+js
+              q=q.replace('document.addEventListener','//document.addEventListener')
+              with tempfile.NamedTemporaryFile('w',suffix='.js',delete=False,encoding='utf-8') as f:
+                f.write(q); fn=f.name
+              r=subprocess.run(['node','--check',fn],capture_output=True,text=True)
+              if r.returncode: issues.append('JS_SYNTAX_ERROR')
+            # Potential interaction blockers on the menu/button.
+            for m in re.finditer(r'<button[^>]*class=["\'][^"\']*ev-global-mobile-menu[^"\']*["\'][^>]*>',t,re.I):
+              tag=m.group(0)
+              if re.search(r'pointer-events\s*:\s*none',tag,re.I): issues.append('BUTTON_POINTER_EVENTS_NONE')
+            # Look for page-level CSS rules explicitly disabling clicks on the class.
+            css=re.findall(r'<style[^>]*>(.*?)</style>',t,re.I|re.S)
+            joined='\n'.join(css)
+            if re.search(r'\.ev-global-mobile-menu[^{}]*\{[^}]*pointer-events\s*:\s*none',joined,re.I|re.S):
+              issues.append('CSS_POINTER_EVENTS_NONE')
+            # Require the menu rule to become visible at mobile width.
+            if not re.search(r'@media\s*\(max-width:\s*850px\)[\s\S]{0,6000}\.ev-global-mobile-menu\s*\{[\s\S]{0,1000}display\s*:\s*inline-flex',t,re.I):
+              issues.append('MOBILE_DISPLAY_RULE_MISSING')
+            if issues: findings.append((str(p),issues))
+          out=['DEEP HAMBURGER MENU AUDIT','===========================',f'HTML pages scanned: {len(htmls)}',f'Pages with deep issues: {len(findings)}','']
+          for p,iss in findings: out.append(f'{p} :: {" | ".join(iss)}')
+          if not findings: out.append('No additional static/runtime wiring issues detected.')
+          Path('hamburger-menu-deep-audit.txt').write_text('\n'.join(out)+'\n',encoding='utf-8')
+          print('\n'.join(out))
+          PY
+      - name: Commit report and remove workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hamburger-menu-deep-audit.txt .github/workflows/deep-audit-hamburger.yml
+          git rm .github/workflows/deep-audit-hamburger.yml
+          git commit -m "Deep audit hamburger menu runtime wiring"
+          git push origin main
