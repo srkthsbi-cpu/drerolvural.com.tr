@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-09-29",
   "entries": [
     {
       "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-bobrek-tasi-riski.html",
@@ -536,6 +536,99 @@
       ],
       "date": "2026-09-27",
       "content_hash": "a3aa4397a5196c47cec58be75342b75c4fb3d698"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bariatrik-cerrahi-sonrasi-vucut-kompozisyonu.html",
+      "title": "Bariatrik Cerrahi Sonrası Vücut Kompozisyonu Nasıl Değerlendirilir?",
+      "primary_keyword": "bariatrik cerrahi sonrası vücut kompozisyonu",
+      "secondary_keywords": [
+        "yağ kütlesi",
+        "yağsız kütle",
+        "kas kütlesi",
+        "bariatrik cerrahi kilo takibi"
+      ],
+      "covered_questions": [
+        "Ameliyat sonrası verilen kilonun ne kadarı yağdan gelir?",
+        "Kas kaybı nasıl anlaşılır?",
+        "BIA ve DEXA arasındaki fark nedir?",
+        "Tartı aynı kalırken vücut kompozisyonu değişebilir mi?",
+        "Hangi ölçümler takipte anlamlıdır?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/41598571/",
+        "https://pubmed.ncbi.nlm.nih.gov/41511769/",
+        "https://pubmed.ncbi.nlm.nih.gov/39976328/"
+      ],
+      "related_articles": [
+        "ameliyat-sonrasi-kas-kutlesinin-korunmasi.html",
+        "ameliyat-sonrasi-protein-onceligi.html",
+        "bariatrik-cerrahi-sonrasi-beklenen-kilo-kaybi.html"
+      ],
+      "date": "2026-09-29",
+      "content_hash": "138a2481",
+      "unique_id": "20260929-bariatrik-cerrahi-sonrasi-vucut-kompozisyonu-138a2481"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/bel-cevresi-ve-kilo-takibi.html",
+      "title": "Bel Çevresi ve Kilo Takibi: Bariatrik Cerrahi Sonrası Ölçüm Neden Önemlidir?",
+      "primary_keyword": "bel çevresi ve kilo takibi",
+      "secondary_keywords": [
+        "bariatrik cerrahi bel çevresi",
+        "bel çevresi ölçümü",
+        "bariatrik cerrahi sonrası ölçümler",
+        "bel çevresi BMI"
+      ],
+      "covered_questions": [
+        "Bel çevresi neden kiloya ek olarak ölçülür?",
+        "Evde bel çevresi nasıl doğru ölçülür?",
+        "BMI ile bel çevresi arasındaki fark nedir?",
+        "Ameliyat sonrası bel çevresi değişimi ne anlatır?",
+        "Bel çevresi ne zaman yanıltıcı olabilir?"
+      ],
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+        "https://iris.who.int/bitstream/handle/10665/44583/9789241501491_eng.pdf",
+        "https://www.nhlbi.nih.gov/health/overweight-and-obesity/symptoms"
+      ],
+      "related_articles": [
+        "vucut-kompozisyonu-ve-kilo-takibi.html",
+        "bariatrik-cerrahi-sonrasi-vucut-kompozisyonu.html",
+        "bariatrik-cerrahi-sonrasi-beklenen-kilo-kaybi.html"
+      ],
+      "date": "2026-09-29",
+      "content_hash": "cf6c8e33",
+      "unique_id": "20260929-bel-cevresi-ve-kilo-takibi-cf6c8e33"
+    },
+    {
+      "url": "https://drerolvural.com.tr/blog/kilo-dalgalanmalari-nasil-degerlendirilir.html",
+      "title": "Bariatrik Cerrahi Sonrası Kilo Dalgalanmaları Nasıl Değerlendirilir?",
+      "primary_keyword": "kilo dalgalanmaları nasıl değerlendirilir",
+      "secondary_keywords": [
+        "bariatrik cerrahi kilo dalgalanması",
+        "ameliyat sonrası tartı değişimi",
+        "kilo takibi",
+        "bariatrik cerrahi kilo trendi"
+      ],
+      "covered_questions": [
+        "Günlük kilo neden değişir?",
+        "Hangi değişim gerçek kilo geri alımı sayılmaz?",
+        "Ne kadar süre trend izlenmelidir?",
+        "Tartı takibi nasıl standardize edilir?",
+        "Hangi durumda yeniden değerlendirme gerekir?"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42191978/",
+        "https://pubmed.ncbi.nlm.nih.gov/32446593/",
+        "https://pubmed.ncbi.nlm.nih.gov/33035570/"
+      ],
+      "related_articles": [
+        "bariatrik-cerrahi-sonrasi-kilo-geri-alimi-ne-zaman-degerlendirilir.html",
+        "kilo-geri-alimi-nedir.html",
+        "kilo-takibinde-hangi-olcumler-kullanilabilir.html"
+      ],
+      "date": "2026-09-29",
+      "content_hash": "58d9891b",
+      "unique_id": "20260929-kilo-dalgalanmalari-nasil-degerlendirilir-58d9891b"
     }
   ]
 }
