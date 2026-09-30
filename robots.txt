@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://drerolvural.com.tr/sitemap.xml
-Sitemap: https://drerolvural.com.tr/sitemap-new-2026-09-24.xml
