@@ -41,8 +41,12 @@ jobs:
 
           for p in htmls:
               s = p.read_text(encoding='utf-8', errors='replace')
-              original = s
 
+              # Cloudflare Pages canonicalizes .html requests to extensionless URLs.
+              # Align all internal links and absolute self-URLs with that canonical form.
+              s = re.sub(r'https://drerolvural\\.com\\.tr/([^\\s\\"<>]+)\\.html(?=[\\"#?])', lambda m: 'https://drerolvural.com.tr/' + m.group(1), s)
+              s = re.sub(r'(href=[\\"\\'])(?!https?://|mailto:|tel:|#)([^\\"\\']+)\\.html([#?\\"\\'])', lambda m: m.group(1)+m.group(2)+m.group(3), s)
+              original = s
               before = s
               s = re.sub(r'<meta\\b[^>]*\\bname=["\\']robots["\\'][^>]*\\bcontent=["\\'][^"\\']*noindex[^"\\']*["\\'][^>]*>\\s*', '', s, flags=re.I)
               s = re.sub(r'<meta\\b[^>]*\\bcontent=["\\'][^"\\']*noindex[^"\\']*["\\'][^"\\'][^>]*\\bname=["\\']robots["\\'][^>]*>\\s*', '', s, flags=re.I)
@@ -69,6 +73,7 @@ jobs:
           for p in htmls:
               rel = p.as_posix()
               url = 'https://drerolvural.com.tr/' if rel == 'index.html' else 'https://drerolvural.com.tr/' + rel
+              url = url[:-5] if url.endswith('.html') else url
               urls.append(url)
           urls = sorted(set(urls))
           root_el = ET.Element('urlset', {'xmlns':'http://www.sitemaps.org/schemas/sitemap/0.9'})
@@ -76,6 +81,19 @@ jobs:
               el = ET.SubElement(root_el, 'url')
               ET.SubElement(el, 'loc').text = u
           ET.ElementTree(root_el).write('sitemap.xml', encoding='utf-8', xml_declaration=True)
+
+          # Legacy typo redirects should terminate directly at the extensionless canonical URLs.
+          redirects = Path('_redirects')
+          if redirects.exists():
+              rs = redirects.read_text(encoding='utf-8')
+              rs = re.sub(r'(https?://drerolvural\\.com\\.tr)?(/[^\\s]+)\\.html(\\s+)(?=[^#\\n]+)', lambda m: (m.group(1) or '') + m.group(2) + m.group(3), rs)
+              rs = rs.replace('/blog/tup-mide-ameliyati-nedir.html /blog/tup-mide-ameliyati-nedir.html', '/blog/tup-mide-ameliyati-nedir.html /blog/tup-mide-ameliyati-nedir')
+              rs = rs.replace('/blog/tupe-mide-ameliyati-nedir.html /blog/tup-mide-ameliyati-nedir.html', '/blog/tupe-mide-ameliyati-nedir.html /blog/tup-mide-ameliyati-nedir')
+              rs = rs.replace('/blog/tupe-mide-ameliyati-sonrasi.html /blog/tup-mide-ameliyati-sonrasi.html', '/blog/tupe-mide-ameliyati-sonrasi.html /blog/tup-mide-ameliyati-sonrasi')
+              rs = rs.replace('/blog/tupe-mide-kimler-icin-uygun.html /blog/tup-mide-ameliyati-kimlere-uygulanir.html', '/blog/tupe-mide-kimler-icin-uygun.html /blog/tup-mide-ameliyati-kimlere-uygulanir')
+              rs = rs.replace('/blog/tupe-mide-riskleri.html /blog/tup-mide-riskleri-ve-komplikasyonlari.html', '/blog/tupe-mide-riskleri.html /blog/tup-mide-riskleri-ve-komplikasyonlari')
+              rs = rs.replace('/blog/metabolik-cerrahi-tip2-diyabet.html /blog/metabolik-cerrahi-tip-2-diyabet.html', '/blog/metabolik-cerrahi-tip2-diyabet.html /blog/metabolik-cerrahi-tip-2-diyabet')
+              redirects.write_text(rs, encoding='utf-8')
 
           print(f'HTML={len(htmls)}')
           print(f'CHANGED={len(changed)}')
