@@ -34,7 +34,7 @@ jobs:
           for p in files:
               s=p.read_text(encoding='utf-8',errors='replace')
               original=s
-              s=re.sub(r'https://drerolvural\.com\.tr/([^\s"<>]+)\.html(?=["#?])',lambda m:'https://drerolvural.com.tr/'+m.group(1),s)
+              s=re.sub(r'(https://drerolvural\.com\.tr/[A-Za-z0-9_./-]+)\.html',r'\1',s)
               s=re.sub(r'(href=["\'])(?!https?://|mailto:|tel:|#)([^"\']+)\.html([#?"\'])',lambda m:m.group(1)+m.group(2)+m.group(3),s)
               if s!=original:
                   p.write_text(s,encoding='utf-8'); changed+=1
