@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   qa:
@@ -21,60 +21,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: One-time canonical URL repair
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          import xml.etree.ElementTree as ET
-          files=sorted(p for p in Path('.').rglob('*.html') if '.git' not in p.parts)
-          changed=0
-          for p in files:
-              s=p.read_text(encoding='utf-8',errors='replace')
-              original=s
-              s=re.sub(r'(https://drerolvural\.com\.tr/[A-Za-z0-9_./-]+)\.html',r'\1',s)
-              s=re.sub(r'(href=["\'])(?!https?://|mailto:|tel:|#)([^"\']+)\.html([#?"\'])',lambda m:m.group(1)+m.group(2)+m.group(3),s)
-              if s!=original:
-                  p.write_text(s,encoding='utf-8'); changed+=1
-          urls=[]
-          for p in files:
-              rel=p.as_posix()
-              urls.append('https://drerolvural.com.tr/' if rel=='index.html' else 'https://drerolvural.com.tr/'+rel[:-5])
-          urls=sorted(set(urls))
-          root=ET.Element('urlset',{'xmlns':'http://www.sitemaps.org/schemas/sitemap/0.9'})
-          for u in urls:
-              x=ET.SubElement(root,'url'); ET.SubElement(x,'loc').text=u
-          ET.ElementTree(root).write('sitemap.xml',encoding='utf-8',xml_declaration=True)
-          r=Path('_redirects')
-          if r.exists():
-              text=r.read_text(encoding='utf-8')
-              replacements={
-                '/blog/tupe-mide-ameliyati-nedir.html /blog/tup-mide-ameliyati-nedir.html':'/blog/tupe-mide-ameliyati-nedir.html /blog/tup-mide-ameliyati-nedir',
-                '/blog/tupe-mide-ameliyati-sonrasi.html /blog/tup-mide-ameliyati-sonrasi.html':'/blog/tupe-mide-ameliyati-sonrasi.html /blog/tup-mide-ameliyati-sonrasi',
-                '/blog/tupe-mide-kimler-icin-uygun.html /blog/tup-mide-ameliyati-kimlere-uygulanir.html':'/blog/tupe-mide-kimler-icin-uygun.html /blog/tup-mide-ameliyati-kimlere-uygulanir',
-                '/blog/tupe-mide-riskleri.html /blog/tup-mide-riskleri-ve-komplikasyonlari.html':'/blog/tupe-mide-riskleri.html /blog/tup-mide-riskleri-ve-komplikasyonlari',
-                '/blog/metabolik-cerrahi-tip2-diyabet.html /blog/metabolik-cerrahi-tip-2-diyabet.html':'/blog/metabolik-cerrahi-tip2-diyabet.html /blog/metabolik-cerrahi-tip-2-diyabet'}
-              for a,b in replacements.items(): text=text.replace(a,b)
-              r.write_text(text,encoding='utf-8')
-          print(f'Canonical clean-URL repair changed {changed} HTML files; sitemap={len(urls)} URLs')
-          PY
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('.github/workflows/full-site-qa-readonly.yml')
-          s=p.read_text(encoding='utf-8')
-          s=s.replace('permissions:\n  contents: write','permissions:\n  contents: read',1)
-          start=s.index('      - name: One-time canonical URL repair\n')
-          end=s.index('      - name: Static site QA\n',start)
-          s=s[:start]+s[end:]
-          p.write_text(s,encoding='utf-8')
-          PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m 'Apply canonical clean URL repair [skip ci]'
-          git push
       - name: Static site QA
         shell: bash
         run: |
