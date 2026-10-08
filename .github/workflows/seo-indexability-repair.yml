@@ -1,0 +1,126 @@
+name: SEO Indexability Repair
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Audit and repair indexability
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+
+          root = Path('.')
+          htmls = sorted(root.rglob('*.html'))
+          changed = []
+          noindex_fixed = 0
+          canonical_fixed = 0
+          robots_fixed = 0
+
+          def canonical_for(p: Path) -> str:
+              rel = p.as_posix()
+              if rel == 'index.html':
+                  return 'https://drerolvural.com.tr/'
+              return 'https://drerolvural.com.tr/' + rel
+
+          for p in htmls:
+              s = p.read_text(encoding='utf-8', errors='replace')
+              original = s
+
+              before = s
+              s = re.sub(r'<meta\\b[^>]*\\bname=["\\']robots["\\'][^>]*\\bcontent=["\\'][^"\\']*noindex[^"\\']*["\\'][^>]*>\\s*', '', s, flags=re.I)
+              s = re.sub(r'<meta\\b[^>]*\\bcontent=["\\'][^"\\']*noindex[^"\\']*["\\'][^"\\'][^>]*\\bname=["\\']robots["\\'][^>]*>\\s*', '', s, flags=re.I)
+              if s != before:
+                  noindex_fixed += 1
+                  s = re.sub(r'</head>', '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"></head>', s, count=1, flags=re.I)
+                  robots_fixed += 1
+
+              canon_matches = list(re.finditer(r'<link\\b[^>]*\\brel=["\\'][^"\\']*canonical[^"\\']*["\\'][^>]*>', s, flags=re.I))
+              if not canon_matches:
+                  s = re.sub(r'</head>', f'<link rel="canonical" href="{canonical_for(p)}"></head>', s, count=1, flags=re.I)
+                  canonical_fixed += 1
+              elif len(canon_matches) > 1:
+                  first = canon_matches[0].group(0)
+                  s = s[:canon_matches[0].start()] + first + s[canon_matches[0].end():]
+                  s = re.sub(r'<link\\b[^>]*\\brel=["\\'][^"\\']*canonical[^"\\']*["\\'][^>]*>', '', s, flags=re.I, count=len(canon_matches)-1)
+                  canonical_fixed += 1
+
+              if s != original:
+                  p.write_text(s, encoding='utf-8')
+                  changed.append(p.as_posix())
+
+          urls = []
+          for p in htmls:
+              rel = p.as_posix()
+              url = 'https://drerolvural.com.tr/' if rel == 'index.html' else 'https://drerolvural.com.tr/' + rel
+              urls.append(url)
+          urls = sorted(set(urls))
+          root_el = ET.Element('urlset', {'xmlns':'http://www.sitemaps.org/schemas/sitemap/0.9'})
+          for u in urls:
+              el = ET.SubElement(root_el, 'url')
+              ET.SubElement(el, 'loc').text = u
+          ET.ElementTree(root_el).write('sitemap.xml', encoding='utf-8', xml_declaration=True)
+
+          print(f'HTML={len(htmls)}')
+          print(f'CHANGED={len(changed)}')
+          print(f'NOINDEX_FIXED={noindex_fixed}')
+          print(f'ROBOTS_FIXED={robots_fixed}')
+          print(f'CANONICAL_FIXED={canonical_fixed}')
+          print(f'SITEMAP_URLS={len(urls)}')
+          print('CHANGED_FILES')
+          for x in changed[:100]: print(x)
+          PY
+
+      - name: Validate and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+          root=Path('.')
+          htmls=list(root.rglob('*.html'))
+          bad=[]
+          for p in htmls:
+              s=p.read_text(encoding='utf-8',errors='replace')
+              if re.search(r'<meta\\b[^>]*name=["\\']robots["\\'][^>]*content=["\\'][^"\\']*noindex',s,re.I): bad.append(f'NOINDEX {p}')
+              if len(re.findall(r'<link\\b[^>]*rel=["\\'][^"\\']*canonical[^"\\']*["\\'][^>]*>',s,re.I)) != 1: bad.append(f'CANONICAL {p}')
+          ET.parse('sitemap.xml')
+          if bad:
+              print('VALIDATION_FAILED')
+              print('\\n'.join(bad[:100]))
+              raise SystemExit(1)
+          print(f'VALIDATION_OK HTML={len(htmls)}')
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            git rm -f .github/workflows/seo-indexability-repair.yml
+            git add -A
+            git commit -m 'SEO indexability audit complete [skip ci]'
+          else
+            git commit -m 'Fix site indexability and rebuild sitemap [skip ci]'
+            git rm -f .github/workflows/seo-indexability-repair.yml
+            git add -A
+            git commit -m 'Remove one-time SEO indexability repair workflow [skip ci]'
+          fi
+          git push
